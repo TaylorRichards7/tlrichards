@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sales Overview</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../coffeeDesignCSS.css">
+
+
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+        // Load the Visualization API and the corechart package.
+        google.charts.load('current', { 'packages': ['corechart'] });
+
+        // Set a callback to run when the Google Visualization API is loaded.
+        google.charts.setOnLoadCallback(drawChart);
+
+        // Callback that creates and populates a data table,
+        // instantiates the pie chart, passes in the data and
+        // draws it.
+        function drawChart() {
+
+            // Create the data table.
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Product');
+            data.addColumn('number', 'Sales');
+            data.addRows([
+                ['Pancake Charm', 4],
+                ['Milk and Cookies', 3],
+                ['Bread', 2],
+                ['Egg and Bacon', 1],
+                ['Pizza', 1]
+            ]);
+
+            // Set chart options
+            var options = {
+                'title': 'What products are selling the best?',
+                'width': 600,
+                'height': 500
+            };
+
+            // Instantiate and draw our chart, passing in some options.
+            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    </script>
+
+
+
+
+    <script>
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawStuff);
+
+        function drawStuff() {
+            var data = new google.visualization.arrayToDataTable([
+                ['Customer Service', 'Percentage'],
+                ["Very Bad", 3],
+                ["Bad", 2],
+                ["OK", 5],
+                ["Great", 15],
+                ['Excellent', 23]
+            ]);
+
+            var options = {
+                title: 'Overall Customer Service',
+                width: 900,
+                legend: { position: 'none' },
+                chart: {
+                    title: 'Overall Customer Service',
+                    subtitle: 'measured by percentages'
+                },
+                bars: 'horizontal', // Required for Material Bar Charts.
+                axes: {
+                    x: {
+                        0: { side: 'top', label: 'Percentage' } // Top x-axis.
+                    }
+                },
+                bar: { groupWidth: "90%" }
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+            chart.draw(data, options);
+        };
+    </script>
+
+    <style>
+        .returnButton {
+            margin: 0 auto;
+            width: 12%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section id="top">
+    </section>
+
+    <div class="jumbotron jumbotron-fluid">
+        <p class="header">Coffee Designs</p>
+        <p class="subhead">It's a clay thing</p>
+    </div>
+    <br />
+
+
+    <div id="chart_div" class="pieChart"></div>
+    <br />
+
+
+    <div id="top_x_div" style="width: 900px; height: 500px;" class="barGraph"></div>
+    <br />
+
+    <div class="returnButton">
+        <a href="coffeeAdminPage.php" class="btn btn-color" role="button">Return to Admin Page</a>
+    </div>
+    <br />
+
+    <footer class="footer">
+        <div class="containerFooter">
+            <p class="text">Coffee Designs <br /> 1234 Coffee Dr <br /> 515-123-4567</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
