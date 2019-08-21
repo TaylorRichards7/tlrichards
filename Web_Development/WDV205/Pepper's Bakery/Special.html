@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Special Events & Classes</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="PeppersBakeryCSS.css" type="text/css">
+  <link rel="stylesheet" href="SpecialPageCSS.css" type="text/css">
+
+</head>
+
+<body>
+  <section id="top">
+  </section>
+
+  <div class="jumbotron jumbotron-fluid">
+    <p class="header">Pepper's Bakery</p>
+    <p class="subhead">Allergy friendly bakery</p>
+  </div>
+
+  <nav class="navbar navbar-expand-md bg-color navbar-dark">
+    <a class="navbar-brand" href="PeppersBakery.html">Pepper's Bakery</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="Bakery.html">Bakery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Special.html">Special Events & Classes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Recipes.html">Recipes</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br />
+
+  <h1>Special Events and Classes</h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Sweet pudding sesame snaps pudding cake chupa chups cotton candy danish lollipop. Powder chupa chups gummi
+          bears. Oat cake dessert tiramisu sugar plum ice cream cake pastry. Soufflé jelly cheesecake toffee wafer
+          donut cookie. Dragée pastry muffin chupa chups tiramisu danish topping. Toffee sweet roll sweet roll
+          caramels tart fruitcake. Croissant jujubes gingerbread fruitcake sweet roll oat cake candy sesame snaps.
+          Cookie sweet roll powder toffee cake gummi bears.</p>
+      </div>
+    </div>
+  </div>
+  <br />
+
+  <img id="myImg" src="images/cakes.jpg" alt="Cakes at Pepper's Bakery made by our staff on Cake Day - July 11, 2017"
+    width="50%" height="50%" class="img">
+  <div id="myModal" class="modal">
+    <span class="close">×</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  <script>
+    var modal = document.getElementById('myModal');
+
+    var img = document.getElementById('myImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+  </script>
+
+  <br />
+
+  <h2>Events at Pepper's Bakery</h2>
+  <br />
+
+  <div class="container">
+    <h3>What's Going on This Week?</h3>
+    <table class="table table-hover">
+      <thead>
+        <tr class="table-color">
+          <th>Day</th>
+          <th>Event</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-color2">
+          <td>Monday</td>
+          <td>Beginner's Cake Decorating Competition</td>
+          <td>6 p.m. - 8 p.m.</td>
+        </tr>
+        <tr class="table-color">
+          <td>Tuesday</td>
+          <td>Fondant: Tips and Tricks class</td>
+          <td>6:30 p.m. - 8:30 p.m.</td>
+        </tr>
+        <tr class="table-color2">
+          <td>Wednesday</td>
+          <td>Youth Group Bake Off</td>
+          <td>6 p.m. - 7 p.m.</td>
+        </tr>
+        <tr class="table-color">
+          <td>Thursday</td>
+          <td>Cupcake Night</td>
+          <td>5 p.m. - 9 p.m.</td>
+        </tr>
+        <tr class="table-color2">
+          <td>Friday</td>
+          <td>Late Night Snacks Bake Off</td>
+          <td>7:30 p.m. - 10:30 p.m.</td>
+        </tr>
+        <tr class="table-color">
+          <td>Saturday</td>
+          <td>Kids Baking Day</td>
+          <td>9 a.m. - 7 p.m.</td>
+        </tr>
+        <tr class="table-color2">
+          <td>Sunday</td>
+          <td>Pie Day</td>
+          <td>1 p.m. - 10 p.m.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br />
+
+  <div class="container4">
+    <img src="images/ice_cream.jpg" alt="Ice Cream" class="image">
+    <div class="overlay">
+      <div class="text">Ice cream was made in our Ice Creamery class</div>
+    </div>
+  </div>
+
+  <br />
+  <br />
+
+  <h2>Classes at Pepper's Bakery</h2>
+  <br />
+
+  <div class="container" style="background-color: #ccffdd; padding: 15px;">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Beginner Classes</h3>
+        <h5>Beginner Cake Decorating</h5>
+        <p class="centertext">Cupcake ipsum dolor sit. Amet topping ice cream croissant. Caramels halvah ice cream
+          lollipop icing jelly. Croissant lemon drops carrot cake tart oat cake tootsie roll biscuit jelly toffee.</p>
+        <h5>Baking 101</h5>
+        <p class="centertext">Chocolate cake toffee jelly beans chocolate cake bear claw gummies pudding brownie.
+          Marshmallow cake macaroon pudding wafer tart topping cake croissant.</p>
+        <h5>Cookie Basics</h5>
+        <p class="centertext">Cake cake lollipop chocolate bar soufflé bear claw jelly-o oat cake. Jujubes dragée
+          halvah tart. Croissant brownie toffee tart jelly beans chocolate marshmallow.</p>
+        <h5>Pies: Crusts and Fillings</h5>
+        <p class="centertext">Sweet pudding sesame snaps pudding cake chupa chups cotton candy danish lollipop.
+          Powder chupa chups gummi bears. Oat cake dessert tiramisu sugar plum ice cream cake pastry.</p>
+        <h5>Working with Frosting</h5>
+        <p class="centertext">Soufflé jelly cheesecake toffee wafer donut cookie. Dragée pastry muffin chupa chups
+          tiramisu danish topping. Toffee sweet roll sweet roll caramels tart fruitcake.</p>
+      </div>
+
+      <div class="col-sm-4">
+        <h3>Advanced Classes</h3>
+        <h5>Advanced Cake Decorating</h5>
+        <p class="centertext">Cupcake ipsum dolor sit. Amet topping ice cream croissant. Caramels halvah ice cream
+          lollipop icing jelly. Croissant lemon drops carrot cake tart oat cake tootsie roll biscuit jelly toffee.</p>
+        <h5>Sweet & Savory</h5>
+        <p class="centertext">Chocolate cake toffee jelly beans chocolate cake bear claw gummies pudding brownie.
+          Marshmallow cake macaroon pudding wafer tart topping cake croissant.</p>
+        <h5>Baking 2.0</h5>
+        <p class="centertext">Cake cake lollipop chocolate bar soufflé bear claw jelly-o oat cake. Jujubes dragée
+          halvah tart. Croissant brownie toffee tart jelly beans chocolate marshmallow.</p>
+        <h5>Fondant 101</h5>
+        <p class="centertext">Sweet pudding sesame snaps pudding cake chupa chups cotton candy danish lollipop.
+          Powder chupa chups gummi bears. Oat cake dessert tiramisu sugar plum ice cream cake pastry.</p>
+        <h5>Pastry Makers</h5>
+        <p class="centertext">Soufflé jelly cheesecake toffee wafer donut cookie. Dragée pastry muffin chupa chups
+          tiramisu danish topping. Toffee sweet roll sweet roll caramels tart fruitcake.</p>
+      </div>
+
+      <div class="col-sm-4">
+        <h3>Expert Classes</h3>
+        <h5>Expert Cake Decorating</h5>
+        <p class="centertext">Cupcake ipsum dolor sit. Amet topping ice cream croissant. Caramels halvah ice cream
+          lollipop icing jelly. Croissant lemon drops carrot cake tart oat cake tootsie roll biscuit jelly toffee.</p>
+        <h5>Stacking Cakes 101</h5>
+        <p class="centertext">Chocolate cake toffee jelly beans chocolate cake bear claw gummies pudding brownie.
+          Marshmallow cake macaroon pudding wafer tart topping cake croissant.</p>
+        <h5>Advanced Pastry Makers</h5>
+        <p class="centertext">Cake cake lollipop chocolate bar soufflé bear claw jelly-o oat cake. Jujubes dragée
+          halvah tart. Croissant brownie toffee tart jelly beans chocolate marshmallow.</p>
+        <h5>Ice Creamery</h5>
+        <p class="centertext">Sweet pudding sesame snaps pudding cake chupa chups cotton candy danish lollipop.
+          Powder chupa chups gummi bears. Oat cake dessert tiramisu sugar plum ice cream cake pastry.</p>
+        <h5>Signature Dish</h5>
+        <p class="centertext">Soufflé jelly cheesecake toffee wafer donut cookie. Dragée pastry muffin chupa chups
+          tiramisu danish topping. Toffee sweet roll sweet roll caramels tart fruitcake.</p>
+      </div>
+    </div>
+  </div>
+  <br />
+
+
+  <div class="container2">
+    <a href="#top" class="btn btn-outline-dark" role="button">Go To Top</a>
+  </div>
+  <br />
+
+  <footer class="footer">
+    <div class="containerfooter">
+      <p class="text-white">Pepper's Bakery <br /> 1234 Bakery Lane <br /> 515-123-4567</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
