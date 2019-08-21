@@ -1,0 +1,71 @@
+/*Bakery at Pepper's Bakery*/
+/*Body*/
+h1 {
+  color: #ff99bb;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  color: #ff99bb;
+  text-align: center;
+}
+
+h4 {
+  color: #00802b;
+}
+
+.container {
+  border: thick solid #33ff77;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+/*Text in Image*/
+.container4 {
+  position: relative;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image {
+  display: block;
+  width: 60%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00802b;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.container4:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=BakeryPageCSS.css.map */
