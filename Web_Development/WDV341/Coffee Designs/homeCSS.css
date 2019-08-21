@@ -1,0 +1,16 @@
+/* CSS page for Coffee Designs Home */
+.whatsNewContainer {
+  margin: 0 auto;
+  width: 50%;
+  border: thick solid #fec0cf;
+  padding: 0.5%;
+}
+
+/* Donate */
+.donateButton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 7%;
+}
+
+/*# sourceMappingURL=homeCSS.css.map */
