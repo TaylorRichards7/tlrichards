@@ -1,0 +1,45 @@
+/* Personal Projects CSS */
+$font-stack: 'Open Sans Condensed', sans-serif;
+
+$primary-color: #7ee7d0;
+$secondary-color: #1D4463;
+$tertiary-color: #FF74B6;
+$quatiary-color: #5C5B5F;
+$quinary-color: #CACACA;
+
+
+/* Body */
+h2 {
+    color: $tertiary-color;
+    font-family: $font-stack;
+    text-align: center;
+    font-size: 2.3em;
+}
+
+h4 {
+    color: $tertiary-color;
+    font-family: $font-stack;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.containerAbout {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.7%;
+    width: 75%;
+    border: thick solid $quatiary-color;
+}
+
+
+/* Img */
+.containerAboutImg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.aboutImg {
+    width: 100%;
+    height: 100%;
+}
