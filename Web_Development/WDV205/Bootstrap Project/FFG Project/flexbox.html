@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Layout</title>
+
+    <link rel="stylesheet" href="flexboxCSS.css" type="text/css">
+
+</head>
+
+<body>
+
+    <div class="flex-containerHeader">
+        <div><img src="images/IMG_0308.JPG" alt="My pic" class="headerImg"></div>
+        <div class="header" style="align-self: center;">Header</div>
+    </div>
+
+
+    <div class="flex-containerNav">
+        <div class="navBar">Nav</div>
+    </div>
+    <br />
+
+
+    <div class="flex-containerMain">
+
+        <div class="leftDiv">
+            <img src="images/IMG_0306.JPG" alt="My pic" class="leftImg">
+            <p>Here is the gallery</p>
+            <div class="flex-containerGallery">
+                <div>
+                    <img src="images/IMG_0306.JPG" alt="My pic" class="galleryImg">
+                    <img src="images/IMG_0307.JPG" alt="My pic" class="galleryImg">
+                    <img src="images/IMG_0308.JPG" alt="My pic" class="galleryImg">
+                    <img src="images/IMG_0306.JPG" alt="My pic" class="galleryImg">
+                    <img src="images/IMG_0307.JPG" alt="My pic" class="galleryImg">
+                    <img src="images/IMG_0308.JPG" alt="My pic" class="galleryImg">
+                </div>
+            </div>
+        </div>
+
+        <div class="rightDiv">
+            <h1>Header text</h1>
+            <h2>Subhead text</h2>
+            <div class="flex-containerColumns">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                        tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+                        iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+                        feugiat nullacfacilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+                        luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta
+                        nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+                    </p>
+                </div>
+            </div>
+
+            <div id="formcontainer">
+                <form id="survey" name="survey" method="post" action="formEmailer.php">
+                    <fieldset class="labelfloatleft">
+                        <legend>Contact Us</legend>
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname" class="text" />
+
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" class="text" />
+
+                        <label for="emailaddress">Email Address</label>
+                        <input type="email" name="emailaddress" id="emailaddress" size="40" class="text"
+                            placeholder="example@address.com" />
+                        <label for="reason">Reason</label>
+                        <textarea name="message" id="message" rows="7" cols="40"></textarea>
+                    </fieldset>
+
+                    <input type="button" value="Submit" class="button" />
+                    <input type="reset" value="Clear" class="button" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <br />
+
+
+    <div class="flex-containerFooter">
+        <p class="footerText">Footer</p>
+    </div>
+
+</body>
+
+</html>
