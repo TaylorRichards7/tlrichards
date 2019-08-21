@@ -1,0 +1,101 @@
+/* CSS for Bootstrap page */
+* {
+  margin: 0.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.jumbotron {
+  background-color: #40e0d0;
+  padding: 0.5%;
+  font-family: "Arial Black", sans-serif;
+}
+
+.headerImg {
+  width: 25%;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+/* Navbar */
+.bg-color {
+  background-color: #ff7f50;
+}
+
+/* Main Container */
+.flex-containerMain {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  border: thick solid #ff7f50;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.flex-containerMain > div {
+  width: 48%;
+}
+
+.leftDiv {
+  border: thick dotted #40e0d0;
+}
+
+.rightDiv {
+  border: thick dotted #ff7f50;
+}
+
+.leftImg {
+  width: 97%;
+  padding: 1.5%;
+}
+
+.galleryImg {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h2, h3 {
+  text-align: center;
+  padding: 0.3%;
+}
+
+.columns {
+  padding: 1.5%;
+}
+
+.formContainer {
+  border: thick solid #808080;
+  padding: 1%;
+  margin: 2%;
+}
+
+.btn-color {
+  background-color: #40e0d0;
+}
+
+/* footer */
+.containerFooter {
+  background-color: #808080;
+  width: 100%;
+  padding: 1%;
+}
+
+.text-white {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.container2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 7.5%;
+}
+
+/*# sourceMappingURL=bootstrapCSS.css.map */
