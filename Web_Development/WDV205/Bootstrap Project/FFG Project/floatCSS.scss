@@ -1,0 +1,164 @@
+/* CSS for Float page */
+
+$font-stack: Arial, Helvetica, sans-serif;
+$secondary-font-stack: "Arial Black", sans-serif;
+
+$primary-color: #40e0d0;
+$secondary-color: #ff7f50;
+$tertiary-color: #808080;
+
+header {
+    padding: 0.3%;
+    text-align: center;
+    background-color: $primary-color;
+    color: white;
+    font-family: $secondary-font-stack;
+    font-size: 3em;
+}
+
+.headerimg {
+    width: 15%;
+    padding: 5px 3px;
+    float: left;
+}
+
+nav {
+    background-color: $secondary-color;
+    color: white;
+    line-height: 250%;
+    text-align: center;
+    font-size: 1.2em;
+    display: block;
+}
+
+#main {
+    border: 3px solid $secondary-color;
+    width: 95%;
+    margin: 1%;
+    padding: 1%;
+}
+
+footer {
+    padding: 1%;
+    color: white;
+    background-color: $tertiary-color;
+    text-align: center;
+    clear: both;
+}
+
+#leftmain {
+    border: 2px dotted $primary-color;
+    width: 46%;
+    padding: 1.5%;
+    float: left;
+}
+
+.img {
+    max-width: 100%;
+}
+
+.img2 {
+    max-width: 49%;
+}
+
+#gallery {
+    border: 2px solid $tertiary-color;
+    padding: 1%;
+    margin: 0.3%;
+}
+
+.imgLeft {
+    float: left;
+}
+
+.imgright {
+    float: right;
+}
+
+#rightmain {
+    border: 2px dotted $secondary-color;
+    width: 46%;
+    padding: 1.5%;
+    float: right;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#columns {
+    -webkit-column-count: 2; 
+    -moz-column-count: 2;
+    column-count: 2;
+    }
+    
+form {
+    margin-top: 3em;
+    border: solid 2px $secondary-color;
+    padding: 0.3em;
+    font-size: 16px;
+}
+    
+#formcontainer {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.labelfloatleft label {
+    width: 100px;
+    margin-right: 10px;
+    color: black;
+    float: left;
+    text-align: right;
+}
+
+.labelfloatleft input {
+    display: block;
+}
+
+fieldset {
+    margin-bottom: 1em;
+    border: solid 2px $tertiary-color;
+    background-color: white;
+    display: block;
+}
+
+legend {
+    color: $secondary-color;
+    padding: 0 10px;
+}
+
+label {
+    color: black;
+}
+
+input.text {
+    background-color: white;
+}
+
+fieldset.group {
+    float: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    border: solid 2px $secondary-color;
+    display: block;
+}
+
+select {
+    display: block;
+}
+
+input.button {
+    color: $tertiary-color;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 4px;
+    background-color: white;
+    border: 1px solid $secondary-color;
+    display: inline;
+}
