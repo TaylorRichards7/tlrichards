@@ -1,0 +1,19 @@
+/*About Pepper's Bakery CSS*/
+/*Body*/
+h1 {
+  color: #ff99bb;
+  text-align: center;
+  font-weight: bold;
+}
+
+h3 {
+  text-align: center;
+}
+
+.container {
+  background-color: white;
+  border: thick solid #33ff77;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=AboutPageCSS.css.map */
