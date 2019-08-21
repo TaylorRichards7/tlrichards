@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+    <link rel="stylesheet" href="../coffeeDesignCSS.css">
+
+    <title>Insert New Products</title>
+
+    <style>
+        .formContainer {
+            margin: 0 auto;
+            width: 25%;
+            padding: 3%;
+            border: thick solid #fec0cf;
+        }
+
+        .returnButton {
+            margin: 0 auto;
+            width: 12%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="top">
+    </section>
+
+    <div class="jumbotron jumbotron-fluid">
+        <p class="header">Coffee Designs</p>
+        <p class="subhead">It's a clay thing</p>
+    </div>
+    <br />
+    <br />
+
+    <div class="formContainer">
+        <form name="form1" method="post" action="productInsert.php">
+            <div class="form-group">
+                <label>Product Name:
+                    <input type="text" name="coffee_product_name" id="coffee_product_name">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>Product Price:
+                    <input type="text" name="coffee_product_price" id="coffee_product_price">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>Product Quantity:
+                    <input type="text" name="coffee_product_quantity" id="coffee_product_quantity">
+                </label>
+            </div>
+            <br />
+
+            <p>
+                <input type="submit" name="button" id="button" class="btn btn-color" value="Submit" />
+                <input type="reset" name="button2" id="button2" class="btn btn-color" value="Clear Form" />
+            </p>
+        </form>
+    </div>
+    <br />
+    <br />
+
+    <div class="returnButton">
+        <a href="coffeeAdminPage.php" class="btn btn-color" role="button">Return to Admin Page</a>
+    </div>
+    <br />
+
+
+
+    <footer class="footer">
+        <div class="containerFooter">
+            <p class="text">Coffee Designs <br /> 1234 Coffee Dr <br /> 515-123-4567</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
