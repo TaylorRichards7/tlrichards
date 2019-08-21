@@ -1,0 +1,41 @@
+/*Home Page CSS*/
+/*Body*/
+h3 {
+  text-align: center;
+  color: #ff99bb;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+#upcomingevents {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: thick solid #33ff77;
+}
+
+h6 {
+  text-align: center;
+}
+
+/*Carousel*/
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-indicators li {
+  background-color: #ff99bb;
+}
+
+#demo {
+  width: 50%;
+  border: thick solid #ff99bb;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=HomePageCSS.css.map */
