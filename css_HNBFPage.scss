@@ -1,0 +1,171 @@
+/* CSS for the header, nav, button and footer of my website*/
+
+$font-stack: 'Raleway', sans-serif;
+$secondary-font-stack: 'Quicksand', sans-serif;
+
+$primary-color: #7ee7d0;
+$secondary-color: #1D4463;
+$tertiary-color: #FF74B6;
+$quatiary-color: #5C5B5F;
+$quinary-color: #CACACA;
+
+
+/* Body */
+* {
+    margin-top: 0.5%;
+    margin-bottom: 0.3%;
+    padding: 0;
+}
+
+body {
+    font-family: $font-stack;
+}
+
+
+
+/* header */
+.jumbotron {
+    background-color: $primary-color;
+    padding: 10px;
+    margin-bottom: -10px;
+    font-family: $secondary-font-stack;
+}
+
+p.header {
+    color: $secondary-color;
+    text-align: center;
+    font-size: 3.5em;
+}
+
+p.subhead {
+    color: $quatiary-color;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+/*Navbar*/
+.bg-color {
+    background-color: $quinary-color;
+}
+
+.navbar-light .navbar-brand {
+    color: $secondary-color;
+    font-size: 1.5em;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $quatiary-color;
+    font-size: 1.3em;
+}
+
+nav a {
+    color: $secondary-color;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/* button */
+.btn-color-pink {
+    background-color: $tertiary-color;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-color-pink:hover {
+    background-color: white;
+    color: $tertiary-color;
+    border: thin solid $tertiary-color;
+}
+
+
+/* Project Name Button */
+.btn-color-lghtBlue {
+    background-color: $primary-color;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-color-lghtBlue:hover {
+    background-color: white;
+    color: $primary-color;
+    border: thin solid $primary-color;
+}
+
+
+/* Project Info Button */
+.btn-color-drkBlue {
+    background-color: $secondary-color;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-color-drkBlue:hover {
+    background-color: white;
+    color: $secondary-color;
+    border: thin solid $secondary-color;
+}
+
+
+
+/* footer */
+.containerFooter {
+    background-color: $quatiary-color;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+
+.text-white {
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.container2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 7.5%;
+}
+
+/* Go To Top Button */
+.flex-containerTopButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.flex-containerTopButton {
+    padding: 0.5%;
+}
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones */
+        [class*="col-"] {
+            width: 100%;
+        }
+    }
+    
+    /* For desktop: */
+    .col-1 {width: 8.33%; margin-left: auto; margin-right: auto;}
+    .col-2 {width: 16.66%; margin-left: auto; margin-right: auto;}
+    .col-3 {width: 25%; margin-left: auto; margin-right: auto;}
+    .col-4 {width: 33.33%; margin-left: auto; margin-right: auto;}
+    .col-5 {width: 41.66%; margin-left: auto; margin-right: auto;}
+    .col-6 {width: 50%; margin-left: auto; margin-right: auto;}
+    .col-7 {width: 58.33%; margin-left: auto; margin-right: auto;}
+    .col-8 {width: 66.66%; margin-left: auto; margin-right: auto;}
+    .col-9 {width: 75%; margin-left: auto; margin-right: auto;}
+    .col-10 {width: 83.33%; margin-left: auto; margin-right: auto;}
+    .col-11 {width: 91.66%; margin-left: auto; margin-right: auto;}
+    .col-12 {width: 100%; margin-left: auto; margin-right: auto;}

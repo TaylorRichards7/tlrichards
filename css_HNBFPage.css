@@ -1,0 +1,208 @@
+/* CSS for the header, nav, button and footer of my website*/
+/* Body */
+* {
+  margin-top: 0.5%;
+  margin-bottom: 0.3%;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* header */
+.jumbotron {
+  background-color: #7ee7d0;
+  padding: 10px;
+  margin-bottom: -10px;
+  font-family: "Quicksand", sans-serif;
+}
+
+p.header {
+  color: #1D4463;
+  text-align: center;
+  font-size: 3.5em;
+}
+
+p.subhead {
+  color: #5C5B5F;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/*Navbar*/
+.bg-color {
+  background-color: #CACACA;
+}
+
+.navbar-light .navbar-brand {
+  color: #1D4463;
+  font-size: 1.5em;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #5C5B5F;
+  font-size: 1.3em;
+}
+
+nav a {
+  color: #1D4463;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* button */
+.btn-color-pink {
+  background-color: #FF74B6;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-color-pink:hover {
+  background-color: white;
+  color: #FF74B6;
+  border: thin solid #FF74B6;
+}
+
+/* Project Name Button */
+.btn-color-lghtBlue {
+  background-color: #7ee7d0;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-color-lghtBlue:hover {
+  background-color: white;
+  color: #7ee7d0;
+  border: thin solid #7ee7d0;
+}
+
+/* Project Info Button */
+.btn-color-drkBlue {
+  background-color: #1D4463;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-color-drkBlue:hover {
+  background-color: white;
+  color: #1D4463;
+  border: thin solid #1D4463;
+}
+
+/* footer */
+.containerFooter {
+  background-color: #5C5B5F;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 1px;
+}
+
+.text-white {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.container2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 7.5%;
+}
+
+/* Go To Top Button */
+.flex-containerTopButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.flex-containerTopButton {
+  padding: 0.5%;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones */
+  [class*=col-] {
+    width: 100%;
+  }
+}
+/* For desktop: */
+.col-1 {
+  width: 8.33%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-2 {
+  width: 16.66%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-3 {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-4 {
+  width: 33.33%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-5 {
+  width: 41.66%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-6 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-7 {
+  width: 58.33%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-8 {
+  width: 66.66%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-9 {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-10 {
+  width: 83.33%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-11 {
+  width: 91.66%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-12 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=css_HNBFPage.css.map */

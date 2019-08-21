@@ -1,0 +1,32 @@
+/* CSS for resume */
+/* Body */
+.resumeContainer {
+  margin: 0 auto;
+  width: 75%;
+  border: thick solid #7ee7d0;
+}
+
+h1 {
+  color: #FF74B6;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+h3 {
+  color: #1D4463;
+  text-align: center;
+}
+
+.resumeInfo {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.bulletPoints {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  width: 85%;
+}
+
+/*# sourceMappingURL=resumeCSS.css.map */

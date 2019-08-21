@@ -1,0 +1,38 @@
+/* CSS for resume */
+$font-stack: 'Raleway', sans-serif;
+
+$primary-color: #7ee7d0;
+$secondary-color: #1D4463;
+$tertiary-color: #FF74B6;
+$quatiary-color: #5C5B5F;
+$quinary-color: #CACACA;
+
+/* Body */
+.resumeContainer {
+    margin: 0 auto;
+    width: 75%;
+    border: thick solid $primary-color;
+}
+
+h1 {
+    color: $tertiary-color;
+    font-family: $font-stack;
+    text-align: center;
+}
+
+h3 {
+    color: $secondary-color;
+    text-align: center;
+}
+
+.resumeInfo {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.bulletPoints {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto;
+    width: 85%;
+}

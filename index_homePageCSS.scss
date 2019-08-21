@@ -1,0 +1,62 @@
+/* CSS for home page */
+$font-stack: 'Open Sans Condensed', sans-serif;
+
+$primary-color: #7ee7d0;
+$secondary-color: #1D4463;
+$tertiary-color: #FF74B6;
+$quatiary-color: #5C5B5F;
+$quinary-color: #CACACA;
+
+/* Body */
+h2 {
+    color: $secondary-color;
+    font-family: $font-stack;
+    text-align: center;
+    font-size: 2.3em;
+}
+
+.containerCreativeProgrammer {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5%;
+    width: 75%;
+    border: thick solid $primary-color;
+}
+
+
+/* Image */
+.containerTopImg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.containerCenterImg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.topImg {
+    width: 100%;
+    height: 100%;
+}
+
+.centerImg {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Go To Top Button */
+.flex-containerTopButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.flex-containerTopButton {
+    padding: 0.5%;
+}
