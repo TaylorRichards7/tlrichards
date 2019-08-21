@@ -1,0 +1,54 @@
+/* Photography CSS */
+/* Body */
+.containerPhoto {
+  margin-left: auto;
+  margin-right: auto;
+  border: thick solid #1D4463;
+  width: 75%;
+  padding: 0.5%;
+}
+
+h2 {
+  color: #FF74B6;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+  font-size: 2.3em;
+}
+
+.pictureHeader {
+  color: #90EBD8;
+  text-align: center;
+  font-size: 2em;
+}
+
+h4 {
+  color: #1D4463;
+  text-align: center;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.march9 {
+  margin: 0 auto;
+  width: 75%;
+  padding: 2%;
+  border: thick dotted #90EBD8;
+}
+
+.conferenceGallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.conferenceGallery > div {
+  width: 25%;
+  padding: 0.5%;
+}
+
+img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=photographyCSS.css.map */

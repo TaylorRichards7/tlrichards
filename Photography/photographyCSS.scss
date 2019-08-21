@@ -1,0 +1,61 @@
+/* Photography CSS */
+$font-stack: 'Open Sans Condensed', sans-serif;
+
+$primary-color: #90EBD8;
+$secondary-color: #1D4463;
+$tertiary-color: #FF74B6;
+$quatiary-color: #5C5B5F;
+$quinary-color: #CACACA;
+
+
+/* Body */
+.containerPhoto {
+    margin-left: auto;
+    margin-right: auto;
+    border: thick solid $secondary-color;
+    width: 75%;
+    padding: 0.5%;
+}
+
+h2 {
+    color: $tertiary-color;
+    font-family: $font-stack;
+    text-align: center;
+    font-size: 2.3em;
+}
+
+.pictureHeader {
+    color: $primary-color;
+    text-align: center;
+    font-size: 2em;
+}
+
+h4 {
+    color: $secondary-color;
+    text-align: center;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.march9 {
+    margin: 0 auto;
+    width: 75%;
+    padding: 2%;
+    border: thick dotted $primary-color;
+}
+
+.conferenceGallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conferenceGallery > div {
+    width: 25%;
+    padding: 0.5%;
+}
+
+img {
+    width: 100%;
+}
