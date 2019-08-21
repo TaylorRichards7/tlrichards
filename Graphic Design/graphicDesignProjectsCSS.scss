@@ -1,0 +1,183 @@
+/* Graphic Design Projects CSS */
+$font-stack: 'Open Sans Condensed', sans-serif;
+
+$primary-color: #7ee7d0;
+$secondary-color: #1D4463;
+$tertiary-color: #FF74B6;
+$quatiary-color: #5C5B5F;
+$quinary-color: #CACACA;
+
+
+/* Body */
+.containerGraphic {
+    margin-left: auto;
+    margin-right: auto;
+    border: thick solid $secondary-color;
+    width: 75%;
+    padding: 0.5%;
+}
+
+h2 {
+    color: $tertiary-color;
+    font-family: $font-stack;
+    text-align: center;
+    font-size: 2.3em;
+}
+
+h4 {
+    color: $secondary-color;
+    text-align: center;
+}
+
+.centerText {
+    text-align: center;
+}
+
+
+/* Flexbox */
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.flex-container > div {
+    padding: 0.7%;
+}
+
+
+/* Read More Div */
+.readMoreDiv {
+    margin: 0 auto;
+    width: 75%;
+}
+
+
+/* Buttons */
+.viewProjectButton {
+    margin: 0 auto;
+    width: 11.1%;
+}
+
+.viewProjectButtonMulti {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0 25%;
+    width: 100%;
+}
+
+.viewProjectButtonTwo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 30%;
+}
+
+
+
+#indesignMore {
+    display: none;
+}
+
+
+#photoshopMore {
+    display: none;
+}
+
+
+#illustratorMore {
+    display: none;
+}
+
+
+/* InDesign Div */
+#treasureIslandMore {
+    display: none;
+}
+
+#swedenTShirtMore {
+    display: none;
+}
+
+#swedenPosterMore {
+    display: none;
+}
+
+#ninjaSushiMore {
+    display: none;
+}
+
+#eatRawMore {
+    display: none;
+}
+
+#culinaryCoverMore {
+    display: none;
+}
+
+#culinaryDinnerMore {
+    display: none;
+}
+
+#culinaryCoordinatorMore {
+    display: none;
+}
+
+#culinaryToqueMore {
+    display: none;
+}
+
+#recipeBookMore {
+    display: none;
+}
+
+
+/* Photoshop Div */
+#acneMore {
+    display: none;
+}
+
+#actionMore {
+    display: none;
+}
+
+#animalMore {
+    display: none;
+}
+
+#backgroundMore {
+    display: none;
+}
+
+#bwMore {
+    display: none;
+}
+
+#doubleMore {
+    display: none;
+}
+
+#headshotMore {
+    display: none;
+}
+
+#imageMore {
+    display: none;
+}
+
+#masterpieceMore {
+    display: none;
+}
+
+#battleMore {
+    display: none;
+}
+
+#portraitMore {
+    display: none;
+}
