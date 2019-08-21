@@ -1,0 +1,49 @@
+/* Coffee Designs Project Page */
+
+$primary-color: #fa6690;
+$secondary-color: #cc9766;
+$tertiary-color: #fec0cf;
+$quatiary-color: #603f20;
+$quinary-color: #dfbe9f;
+$senary-color: #fc9cb7;
+
+$card-body-color: #fee7ec;
+
+/* Body */
+h3 {
+    color: $quatiary-color;
+    text-align: center;
+}
+
+h5 {
+    color: $card-body-color;
+    text-align: center;
+}
+
+p {
+    color: $quatiary-color;
+}
+
+
+
+/* Info Container */
+.infoContainer {
+    margin: 0 auto;
+    width: 50%;
+    padding: 1%;
+    border: thick solid #fec0cf;
+}
+
+
+/* Cards */
+.bg-colorltBrown {
+    background-color: $senary-color;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+}
