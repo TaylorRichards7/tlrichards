@@ -1,0 +1,23 @@
+/*About Pepper's Bakery CSS*/
+
+$primary-color: #ff99bb;
+$secondary-color: #33ff77;
+$tertiary-color: #00802b;
+
+	/*Body*/
+h1 {
+	color: $primary-color;
+	text-align: center;
+	font-weight: bold;
+}
+
+h3 {
+	text-align: center;
+}
+
+.container {
+	background-color: white;
+	border: thick solid $secondary-color;
+	padding: 10px;
+}
+
