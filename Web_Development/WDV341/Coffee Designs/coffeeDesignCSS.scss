@@ -1,0 +1,123 @@
+/* Coffee Designs CSS */
+
+$font-stack: 'Dosis', sans-serif;
+
+$primary-color: #fa6690;
+$secondary-color: #cc9766;
+$tertiary-color: #fec0cf;
+$quatiary-color: #603f20;
+$quinary-color: #dfbe9f;
+$senary-color: #fc9cb7;
+
+
+/* Overall */
+body {
+    font-family: $font-stack;
+}
+
+h2 {
+    color: $primary-color;
+    text-align: center;
+}
+
+h3 {
+    color: $secondary-color;
+    text-align: center;
+}
+
+h4 {
+    color: $quatiary-color;
+    text-align: center;
+}
+
+h5 {
+    color: $primary-color;
+    text-align: center;
+}
+
+
+
+/* Header */
+.jumbotron {
+    background-color: $quinary-color;
+    padding: 10px;
+    margin-bottom: -3px;
+}
+
+p.header {
+    color: $primary-color;
+    font-family: $secondary-color;
+    text-align: center;
+    font-size: 4em;
+}
+
+p.subhead {
+    color: $quatiary-color;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+
+/* Navbar */
+.bg-color {
+    background-color: $tertiary-color;
+}
+
+.navbar .navbar-nav .nav-link{
+    color: $quatiary-color;
+    font-size: 1.1em;
+}
+
+
+/* a tags */
+a {
+    color: $secondary-color;
+}
+
+a:hover {
+    color: $quatiary-color;
+    text-decoration: none;
+}
+
+
+
+/* Go to Top Button */
+.btn-color {
+    background-color: $senary-color;
+    color: white;
+}
+
+.topButtonContainer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Charts*/
+.pieChart {
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+.barGraph {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+/*Footer*/
+.containerFooter {
+    background-color: $quinary-color;
+    width: 100%;
+    padding: 0.5%;
+  }
+  
+  .text {
+    color: $quatiary-color;
+    text-align: center;
+    font-size: 1.1em;
+  }
