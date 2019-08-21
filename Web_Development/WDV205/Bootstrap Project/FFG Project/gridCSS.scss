@@ -1,0 +1,162 @@
+/* CSS for Grid page */
+
+$font-stack: Arial, Helvetica, sans-serif;
+$secondary-font-stack: "Arial Black", sans-serif;
+
+$primary-color: #40e0d0;
+$secondary-color: #ff7f50;
+$tertiary-color: #808080;
+
+
+body {
+	font-family: $font-stack; 
+}
+
+#item1 { grid-area: header; background-color: $primary-color; color: white; text-align: center; font-family: $secondary-font-stack; font-size: 2.5em;}
+
+#item2 {grid-area: nav; background-color: $secondary-color; color: white; text-align: center;}
+
+#item3 { grid-area: left; border: 2px dotted $tertiary-color;}
+
+#item4 { grid-area: right; border: 2px dotted $secondary-color;}
+
+#item5 { grid-area: footer; background-color: $tertiary-color; color: white; text-align: center; font-size: 2.5em;}
+
+	.grid-containerMain {
+		display: grid;
+		grid-template-areas:
+			'header header header header header header'
+			'nav nav nav nav nav nav'
+			'left left left right right right'
+			'footer footer footer footer footer footer';
+		grid-gap: 7px;
+		padding: 5px;
+	}
+	.grid-containerMain > div {
+		padding: 3px 0;
+	}
+
+	.img {
+		max-width: 100%;
+	}
+	
+	.img2 {
+		max-width: 100%;
+	}
+	
+	.headerImg {
+		max-width: 25%;
+	}
+	
+	.grid-containerGallery {
+		display: grid;
+		grid-gap: 5px 5px;
+		grid-template-columns: auto auto auto;
+		border: 2px dotted $primary-color;
+		padding: 7px;
+	}
+	
+	.grid-item {
+		padding: 3px;
+	}
+	
+	.grid-item2 {
+		padding: 1px;
+	}
+	
+	.grid-containerHeader {
+		display: grid;
+		grid-gap: 15px;
+		grid-template-columns: auto auto auto;
+	}
+
+	h1, h2 {
+		text-align: center;
+	}
+	
+	#columns {
+		-webkit-column-count: 2; 
+		-moz-column-count: 2;
+		column-count: 2;
+		-webkit-column-gap: 10px;
+		-moz-column-gap: 10px;
+		column-gap: 10px;
+		-webkit-column-rule-style: solid;
+		-moz-column-rule-style: solid;
+		column-rule-style: solid;
+		-webkit-column-rule-width: 1px;
+		-moz-column-rule-width: 1px;
+        column-rule-width: 1px;
+        padding: 1%;
+	}
+
+	form {
+		margin-top: 3em;
+		border: solid 2px $secondary-color;
+		padding: 0.3em;
+		font-size: 16px;
+	}
+		
+	#formcontainer {
+		width: 95%;
+		display: block;
+		margin: auto;
+	}
+	
+	.labelfloatleft label {
+		width: 90px;
+		margin-right: 7px;
+		color: black;
+		float: left;
+		text-align: right;
+	}
+	
+	.labelfloatleft input {
+		display: block;
+	}
+	
+	fieldset {
+		margin-bottom: 1em;
+		border: solid 2px $tertiary-color;
+		background-color: white;
+		display: block;
+	}
+	
+	legend {
+		color: $secondary-color;
+		padding: 0 5px;
+	}
+	
+	label {
+		color: black;
+	}
+	
+	input.text {
+		background-color: white;
+	}
+	
+	fieldset.group {
+		float: none;
+		border: 0;
+		margin: 0;
+		padding: 0;
+	}
+	
+	textarea {
+		border: solid 2px $secondary-color;
+		display: block;
+	}
+	
+	select {
+		display: block;
+	}
+	
+	input.button {
+		color: $tertiary-color;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding: 2px;
+		background-color: white;
+		border: 1px solid $secondary-color;
+		display: inline;
+	}
