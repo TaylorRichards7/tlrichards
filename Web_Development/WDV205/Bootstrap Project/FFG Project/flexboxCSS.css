@@ -1,0 +1,196 @@
+/* CSS for Flexbox page */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  text-align: center;
+}
+
+.flex-containerHeader {
+  display: flex;
+  justify-content: space-around;
+  background-color: #40e0d0;
+}
+
+.flex-containerHeader > div {
+  width: 25%;
+  margin: 0 auto;
+  padding: 0.5%;
+}
+
+.headerImg {
+  width: 60%;
+}
+
+.header {
+  font-family: "Arial Black", sans-serif;
+  text-align: center;
+  font-size: 3em;
+  color: white;
+}
+
+.flex-containerNav {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-containerNav > div {
+  background-color: #ff7f50;
+  width: 100%;
+  margin: 1% 0 0;
+  padding: 0.5%;
+}
+
+.navBar {
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
+
+.flex-containerMain {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  border: thick solid #ff7f50;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.flex-containerMain > div {
+  width: 48%;
+}
+
+.leftDiv {
+  border: thick dotted #40e0d0;
+}
+
+.rightDiv {
+  border: thick dotted #ff7f50;
+}
+
+.leftImg {
+  width: 97%;
+  padding: 1.5%;
+}
+
+.flex-containerGallery {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-containerGallery > div {
+  border: thick solid #808080;
+  margin: 2% 2%;
+  padding: 1%;
+}
+
+.galleryImg {
+  width: 47%;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.flex-containerColumns {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.flex-containerColumns > div {
+  width: 95%;
+  margin: 0 auto;
+}
+
+form {
+  margin-top: 3em;
+  border: solid 2px #ff7f50;
+  padding: 0.3em;
+  font-size: 16px;
+}
+
+#formcontainer {
+  width: 95%;
+  display: block;
+  margin: auto;
+}
+
+.labelfloatleft label {
+  width: 90px;
+  margin-right: 7px;
+  color: black;
+  float: left;
+  text-align: right;
+}
+
+.labelfloatleft input {
+  display: block;
+}
+
+fieldset {
+  margin-bottom: 1em;
+  border: solid 2px #808080;
+  background-color: white;
+  display: block;
+}
+
+legend {
+  color: #ff7f50;
+  padding: 0 5px;
+}
+
+label {
+  color: black;
+}
+
+input.text {
+  background-color: white;
+}
+
+fieldset.group {
+  float: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  border: solid 2px #ff7f50;
+  display: block;
+}
+
+select {
+  display: block;
+}
+
+input.button {
+  color: #808080;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 2px;
+  background-color: white;
+  border: 1px solid #ff7f50;
+  display: inline;
+}
+
+.flex-containerFooter {
+  display: flex;
+  background-color: #808080;
+  padding: 1.5%;
+}
+
+.flex-containerFooter > div {
+  width: 100%;
+}
+
+.footerText {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=flexboxCSS.css.map */
