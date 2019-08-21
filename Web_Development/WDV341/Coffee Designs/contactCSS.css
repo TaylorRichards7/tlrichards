@@ -1,0 +1,10 @@
+/* Coffee Designs contact page */
+/* Form */
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+
+/*# sourceMappingURL=contactCSS.css.map */
