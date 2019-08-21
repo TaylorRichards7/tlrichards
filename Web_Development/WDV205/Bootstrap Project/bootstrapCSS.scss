@@ -1,0 +1,116 @@
+/* CSS for Bootstrap page */
+
+$font-stack: Arial, Helvetica, sans-serif;
+$secondary-font-stack: "Arial Black", sans-serif;
+
+$primary-color: #40e0d0;
+$secondary-color: #ff7f50;
+$tertiary-color: #808080;
+
+
+* {
+    margin: 0.5%;
+}
+
+body {
+    font-family: $font-stack;
+}
+
+
+
+/* Header */
+.jumbotron {
+    background-color: $primary-color;
+    padding: 0.5%;
+    font-family: $secondary-font-stack;
+}
+
+.headerImg{ 
+    width: 25%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+
+
+/* Navbar */
+.bg-color {
+    background-color: $secondary-color;
+}
+
+
+
+/* Main Container */
+.flex-containerMain {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border: thick solid $secondary-color;
+    width: 95%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.flex-containerMain > div {
+    width: 48%;
+}
+
+.leftDiv {
+    border: thick dotted $primary-color;
+}
+
+.rightDiv {
+    border: thick dotted $secondary-color;
+}
+
+.leftImg {
+    width: 97%;
+    padding: 1.5%;
+}
+
+.galleryImg {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2, h3 {
+    text-align: center;
+    padding: 0.3%;
+}
+
+.columns {
+    padding: 1.5%;
+}
+
+.formContainer {
+    border: thick solid $tertiary-color;
+    padding: 1%;
+    margin: 2%;
+}
+
+.btn-color {
+    background-color: $primary-color;
+}
+
+
+
+/* footer */
+.containerFooter {
+    background-color: $tertiary-color;
+    width: 100%;
+    padding: 1%;
+}
+
+.text-white {
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.container2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 7.5%;
+}
