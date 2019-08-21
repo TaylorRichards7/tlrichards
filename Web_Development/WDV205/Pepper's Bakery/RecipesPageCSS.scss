@@ -1,0 +1,355 @@
+/*Recipes at Pepper's Bakery*/
+
+$primary-color: #ff99bb;
+$secondary-color: #33ff77;
+$tertiary-color: #00802b;
+
+
+    /* Headings */
+h1 {
+    color: $primary-color;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    color: $secondary-color;
+    text-align: center;
+}
+
+h4 {
+    color: $secondary-color;
+    text-align: center;
+}
+
+h5 {
+    color: $tertiary-color;
+    text-align: center;
+}
+
+
+
+    /* Oreo Balls imgs */
+img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 24.5%;
+    height: 24.5%;
+}
+
+.oreoImgContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+
+
+    /* Used throughout page */
+.centerText {
+    text-align: center;
+}
+
+.container {
+	border: thick solid $secondary-color;
+}
+
+.containerButton {
+    margin-left: auto;
+    margin-right: auto;
+    width: 31.7%;
+    padding: 3px;
+}
+
+.containerButton2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 37%;
+    padding: 3px;
+}
+
+.recipesContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border: thick solid $primary-color;
+    padding: 5px;
+}
+
+.recipesContainer2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; 
+}
+
+.btn-outline-light {
+    color: $primary-color;
+    border: thin solid darkgrey;
+}
+
+.btn-outline-success {
+    color: $tertiary-color;
+    border: thin solid $secondary-color;
+}
+
+#ingredientsDiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10.5%;
+}
+
+#directionsDiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 9.7%;
+}
+
+
+
+/* Ice Cream Cupcakes */
+#iceCreamCupcakes {
+    display: none;
+}
+
+
+
+#smallCupcake {
+    display: none;
+}
+
+#smallIngredientsCupcake {
+    display: none;
+}
+
+#smallDirectionsCupcake {
+    display: none;
+}
+
+
+
+#normalCupcake {
+    display: none;
+}
+
+#normalIngredientsCupcake {
+    display: none;
+}
+
+#normalDirectionsCupcake {
+    display: none;
+}
+
+
+#bigCupcake {
+    display: none;
+}
+
+#bigIngredientsCupcake {
+    display: none;
+}
+
+#bigDirectionsCupcake {
+    display: none;
+}
+/* End ice cream cupcakes */
+
+
+
+
+/* Giant Molten Cake */
+#giantMoltenCake {
+    display: none;
+}
+
+
+
+#smallCakes {
+    display: none;
+}
+
+#smallIngredientsCake {
+    display: none;
+}
+
+#smallDirectionsCake {
+    display: none;
+}
+
+
+
+#normalCakes {
+    display: none;
+}
+
+#normalIngredientsCake {
+    display: none;
+}
+
+#normalDirectionsCake {
+    display: none;
+}
+
+
+
+#bigCakes {
+    display: none;
+}
+
+#bigIngredientsCake {
+    display: none;
+}
+
+#bigDirectionsCake {
+    display: none;
+}
+/* end giant molten cake */
+
+
+
+/* Mixed Berry Pie */
+#mixedBerryPie{
+    display: none;
+}
+
+
+
+#smallPie {
+    display: none;
+}
+
+#smallIngredientsPie {
+    display: none;
+}
+
+#smallDirectionsPie {
+    display: none;
+}
+
+
+
+#normalPie {
+    display: none;
+}
+
+#normalIngredientsPie {
+    display: none;
+}
+
+#normalDirectionsPie {
+    display: none;
+}
+
+
+
+#bigPie {
+    display: none;
+}  
+
+#bigIngredientsPie {
+    display: none;
+}
+
+#bigDirectionsPie {
+    display: none;
+}
+/* end mixed berry pie */
+
+
+
+/* Frosted Sugar Cookie */
+#frostedSugarCookie {
+    display: none;
+}
+
+
+
+#smallCookie {
+    display: none;
+}
+
+#smallIngredientsCookie {
+    display: none;
+}
+
+#smallDirectionsCookie {
+    display: none;
+}
+
+
+
+#normalCookie {
+    display: none;
+}
+
+#normalIngredientsCookie {
+    display: none;
+}
+
+#normalDirectionsCookie {
+    display: none;
+}
+
+
+
+#bigCookie {
+    display: none;
+}
+
+#bigIngredientsCookie {
+    display: none;
+}
+
+#bigDirectionsCookie {
+    display: none;
+}
+/* end frosted sugar cookie */
+
+
+
+/* Cannoli */
+#cannoliPastry {
+    display: none;
+}
+
+
+
+#smallPastry {
+    display: none;
+}
+
+#smallIngredientsPastry {
+    display: none;
+}
+
+#smallDirectionsPastry {
+    display: none;
+}
+
+
+
+#normalPastry {
+    display: none;
+}
+
+#normalIngredientsPastry {
+    display: none;
+}
+
+#normalDirectionsPastry {
+    display: none;
+}
+
+
+
+#bigPastry {
+    display: none;
+}
+
+#bigIngredientsPastry {
+    display: none;
+}
+
+#bigDirectionsPastry {
+    display: none;
+}
+/* end cannoli */
