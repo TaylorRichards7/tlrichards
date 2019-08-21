@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- WDV Final: Coffee Tree
+		Author: Taylor Richards
+		Date: November 15, 2017
+		-->
+
+	<meta name="description"
+		content="This is the about page for the Coffee Tree Cafe website, it contains info about the cafe and it contains a form for the website" />
+	<meta name="keywords" content="Coffee Tree, about Coffee Tree" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="reset.css" type="text/css" />
+	<link rel="stylesheet" href="coffeetree.css" type="text/css" />
+
+	<title>Coffee Tree Cafe About</title>
+
+	<style type="text/css">
+		#main {
+			width: 90%;
+			margin: 10px auto;
+			padding: 2% 0;
+			border: 2px solid #996600;
+			background-color: #ccffcc;
+		}
+
+		.lineheight {
+			line-height: 2;
+		}
+
+		img.float {
+			display: block;
+			margin: 20px;
+			float: right;
+		}
+
+		.contact {
+			color: #996600;
+			text-align: center;
+			line-height: 3;
+		}
+
+		.centerText {
+			text-align: center;
+			color: #996600;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<section id="top">
+
+		<header>
+			<p><img src="images/coffee-shop-logos (1).jpg" alt="Coffee logo" width="20%" height="20%" /></p>
+			<h1>Coffee Tree Cafe</h1>
+		</header> <!-- end header -->
+
+		<nav>
+			<ul>
+				<li><a href="homepage.htm" title="home">Home</a></li>
+				|<li><a href="menupage.htm" title="menu">Menu</a></li>
+				|<li><a href="recipespage.htm" title="recipes">Recipes</a></li>
+				|<li><a href="howtopage.htm" title="how to">How To</a></li>
+				|<li><a href="upcomingeventspage.htm" title="upcoming events">Upcoming Events</a></li>
+			</ul>
+		</nav>
+
+
+		<h1 class="headermenu">About Coffee Tree Cafe</h1>
+
+		<section id="main">
+
+			<a href="homepage.htm"><img src="images/coffee1[1].jpg" alt="home" title="Go To Home Page" width="30%"
+					height="30%" class="float" /></a>
+
+			<h2 class="lineheight">The Coffee Tree Cafe</h2>
+			<p>604 24th Street<br />
+				St. Paul, Minnesota<br />
+				702-971-1154<br /></p>
+
+
+			<h2 class="lineheight">Hours</h2>
+			<p>Sunday 7:00 am to 9 pm<br />
+				Monday-Thursday 6:00 am to 10:00 pm<br />
+				Friday 6:00 am to 11:00 pm<br />
+				Saturday 6:30 am to 11:00 pm<br /></p>
+
+			<h2 class="lineheight">Coffee Tree Cafe</h2>
+			<p>Founded was in 2006 by MSU graduate students Michel Bohmer and Sandy Thomas. Located in the heart of
+				MSU's campus
+				town, The Coffee Tree Cafe is designed to be a funky destination. We serve premium products such as
+				fresh roasted
+				coffee and espresso drinks, hot and cold teas, grilled and cold sandwiches, and homemade soups. Not just
+				a daytime
+				destination! Stop by in the evening, enjoy a glass of wine or beer and listen to some live entertainment
+				in our
+				connected theatre space!</p>
+		</section> <!-- end main section -->
+
+
+		<h2 class="contact">Contact Us!</h2>
+
+
+		<div id="formcontainer">
+
+			<form id="survey" name="survey" method="post" action="formEmailer.php">
+				<fieldset class="labelfloatleft">
+					<legend>Contact Information</legend>
+					<label for="firstname">First Name</label>
+					<input type="text" name="firstname" id="firstname" class="text" />
+
+					<label for="lastname">Last Name</label>
+					<input type="text" name="lastname" id="lastname" class="text" />
+
+					<label for="emailaddress">Email Address</label>
+					<input type="email" name="emailaddress" id="emailaddress" size="40" class="text"
+						placeholder="example@address.com" />
+				</fieldset>
+
+				<fieldset>
+					<legend>Other Information</legend>
+
+					<legend>I would be interested in: (check all that apply)</legend>
+					<fieldset class="group">
+						<input type="checkbox" name="interested" id="mailinglist" value="mailinglist"
+							checked="checked" />
+						<label for="mailinglist">Please add me to the mailing list</label>
+					</fieldset>
+
+					<fieldset class="group">
+						<input type="checkbox" name="interested" id="updates" value="updates" />
+						<label for="ireland">I'd like to receive updates on the site</label>
+					</fieldset>
+
+					<fieldset class="group">
+						<input type="checkbox" name="interested" id="coupons" value="coupons" />
+						<label for="reunion">I'd like to receive coupons</label>
+					</fieldset>
+
+					<fieldset class="group">
+						<input type="checkbox" name="interested" id="know more" value="Coffee Tree Cafe" />
+						<label for="familytree">I'd like to know more about Coffee Tree Cafe</label>
+					</fieldset>
+
+					<fieldset class="group">
+						<input type="checkbox" name="interested" id="know more" value="recipes and how tos" />
+						<label for="newsletter">I'd like to see more recipes and how tos</label>
+					</fieldset>
+
+				</fieldset>
+
+				<fieldset>
+					<legend>Send a message</legend>
+
+					<label for="message">Message</label>
+					<textarea name="message" id="message" rows="10" cols="45"></textarea>
+				</fieldset>
+
+				<input type="submit" value="Send Information" class="button" />
+				<input type="reset" value="Reset" class="button" />
+			</form>
+
+		</div> <!-- end formcontainer -->
+
+		<br />
+
+		<p class="nav a" class="nav a:hover" class="nav a:visited"><a href="#top"> Go to top </a></p>
+
+
+		<footer>
+			<p>The Coffee Tree Cafe <br />
+				604 24th Street <br />
+				St. Paul, Minnesota <br /></p>
+		</footer>
+
+
+
+
+
+
+</body>
+
+</html>
