@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125136130-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-125136130-1');
+    </script>
+
+    <title>Web Development</title>
+
+    <meta name="description"
+        content="This page has the Web Development projects from previous classes that I like and that I feel showcase my skills well. This page also provides a description of the project and my thought process behind the making of the project as well" />
+    <meta name="keywords"
+        content="Taylor Richards, Taylor Richards Website, Taylor Richards Des Moines, Web Developer, Web Developer in Des Moines" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css_HNBFPage.css" type="text/css">
+    <link rel="stylesheet" href="webDevProjectsCSS.css" type="text/css">
+
+
+    <script>
+        $(document).ready(function (e) {
+
+            $("#readMoreHTML").click(function (e) {
+                $("#htmlMore").slideToggle();
+                $("#ffgMore").hide();
+                $("#bootMore").hide();
+                $("#bakeryMore").hide();
+                $("#greetingMore").hide();
+                $("#atmMore").hide();
+                $("#formMore").hide();
+                $("#recipeMore").hide();
+                $("#jsonMore").hide();
+                $("#phpMore").hide();
+                $("#sqlMore").hide();
+                $("#nodeMore").hide();
+                $("#reactMore").hide();
+                $("#wpMore").hide();
+            });
+
+
+            $("#readMoreCSS").click(function (e) {
+                $("#ffgMore").slideToggle();
+                $("#bootMore").slideToggle();
+                $("#htmlMore").hide();
+                $("#bakeryMore").hide();
+                $("#greetingMore").hide();
+                $("#atmMore").hide();
+                $("#formMore").hide();
+                $("#recipeMore").hide();
+                $("#jsonMore").hide();
+                $("#phpMore").hide();
+                $("#sqlMore").hide();
+                $("#nodeMore").hide();
+                $("#reactMore").hide();
+                $("#wpMore").hide();
+            });
+
+
+            $("#readMoreSASS").click(function (e) {
+                $("#bakeryMore").slideToggle();
+                $("#htmlMore").hide();
+                $("#ffgMore").hide();
+                $("#bootMore").hide();
+                $("#greetingMore").hide();
+                $("#atmMore").hide();
+                $("#formMore").hide();
+                $("#recipeMore").hide();
+                $("#jsonMore").hide();
+                $("#phpMore").hide();
+                $("#sqlMore").hide();
+                $("#nodeMore").hide();
+                $("#reactMore").hide();
+                $("#wpMore").hide();
+            });
+
+
+            $("#readMoreJS").click(function (e) {
+                $("#greetingMore").slideToggle();
+                $("#atmMore").slideToggle();
+                $("#formMore").slideToggle();
+                $("#htmlMore").hide();
+                $("#ffgMore").hide();
+                $("#bootMore").hide();
+                $("#bakeryMore").hide();
+                $("#recipeMore").hide();
+                $("#jsonMore").hide();
+                $("#phpMore").hide();
+                $("#sqlMore").hide();
+                $("#nodeMore").hide();
+                $("#reactMore").hide();
+                $("#wpMore").hide();
+            });
+
+
+            $("#readMorejQuery").click(function (e) {
+                $("#recipeMore").slideToggle();
+                $("#htmlMore").hide();
+                $("#ffgMore").hide();
+                $("#bootMore").hide();
+                $("#bakeryMore").hide();
+                $("#greetingMore").hide();
+                $("#atmMore").hide();
+                $("#formMore").hide();
+                $("#jsonMore").hide();
+                $("#phpMore").hide();
+                $("#sqlMore").hide();
+                $("#nodeMore").hide();
+                $("#reactMore").hide();
+                $("#wpMore").hide();
+            });
+
+
+            $("#readMoreJSON").click(function (e) {
+                $("#jsonMore").slideToggle();
+                $("#htmlMore").hide();
+                $("#ffgMore").hide();
+                $("#bootMore").hide();
+                $("#bakeryMore").hide();
+                $("#greetingMore").hide();
+                $("#atmMore").hide();
+                $("#formMore").hide();
+                $("#recipeMore").hide();
+                $("#phpMore").hide();
+                $("#sqlMore").hide();
+                $("#nodeMore").hide();
+                $("#reactMore").hide();
+                $("#wpMore").hide();
+            });
+
+
+            $("#readMorePHP").click(function (e) {
+                $("#phpMore").slideToggle();
+                $("#htmlMore").hide();
+                $("#ffgMore").hide();
+                $("#bootMore").hide();
+                $("#bakeryMore").hide();
+                $("#greetingMore").hide();
+                $("#atmMore").hide();
+                $("#formMore").hide();
+                $("#recipeMore").hide();
+                $("#jsonMore").hide();
+                $("#sqlMore").hide();
+                $("#nodeMore").hide();
+                $("#reactMore").hide();
+                $("#wpMore").hide();
+            });
+
+
+            $("#readMoreSQL").click(function (e) {
+                $("#sqlMore").slideToggle();
+                $("#htmlMore").hide();
+                $("#ffgMore").hide();
+                $("#bootMore").hide();
+                $("#bakeryMore").hide();
+                $("#greetingMore").hide();
+                $("#atmMore").hide();
+                $("#formMore").hide();
+                $("#recipeMore").hide();
+                $("#jsonMore").hide();
+                $("#phpMore").hide();
+                $("#nodeMore").hide();
+                $("#reactMore").hide();
+                $("#wpMore").hide();
+            });
+
+
+            $("#readMorePython").click(function (e) {
+                $("#pythonMore").slideToggle();
+                $("#htmlMore").hide();
+                $("#ffgMore").hide();
+                $("#bootMore").hide();
+                $("#bakeryMore").hide();
+                $("#greetingMore").hide();
+                $("#atmMore").hide();
+                $("#formMore").hide();
+                $("#recipeMore").hide();
+                $("#jsonMore").hide();
+                $("#phpMore").hide();
+                $("#sqlMore").hide();
+                $("#nodeMore").hide();
+                $("#reactMore").hide();
+                $("#wpMore").hide();
+            });
+
+
+            $("#readMoreNode").click(function (e) {
+                $("#nodeMore").slideToggle();
+                $("#htmlMore").hide();
+                $("#ffgMore").hide();
+                $("#bootMore").hide();
+                $("#bakeryMore").hide();
+                $("#greetingMore").hide();
+                $("#atmMore").hide();
+                $("#formMore").hide();
+                $("#recipeMore").hide();
+                $("#jsonMore").hide();
+                $("#phpMore").hide();
+                $("#sqlMore").hide();
+                $("#reactMore").hide();
+                $("#wpMore").hide();
+            });
+
+
+            $("#readMoreReact").click(function (e) {
+                $("#reactMore").slideToggle();
+                $("#htmlMore").hide();
+                $("#ffgMore").hide();
+                $("#bootMore").hide();
+                $("#bakeryMore").hide();
+                $("#greetingMore").hide();
+                $("#atmMore").hide();
+                $("#formMore").hide();
+                $("#recipeMore").hide();
+                $("#jsonMore").hide();
+                $("#phpMore").hide();
+                $("#sqlMore").hide();
+                $("#nodeMore").hide();
+                $("#wpMore").hide();
+            });
+
+
+            $("#readMoreWP").click(function (e) {
+                $("#wpMore").slideToggle();
+                $("#htmlMore").hide();
+                $("#ffgMore").hide();
+                $("#bootMore").hide();
+                $("#bakeryMore").hide();
+                $("#greetingMore").hide();
+                $("#atmMore").hide();
+                $("#formMore").hide();
+                $("#recipeMore").hide();
+                $("#jsonMore").hide();
+                $("#phpMore").hide();
+                $("#sqlMore").hide();
+                $("#nodeMore").hide();
+                $("#reactMore").hide();
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <section id="top">
+    </section>
+
+    <div class="col-12">
+        <div class="jumbotron jumbotron-fluid">
+            <p class="header">Taylor Richards</p>
+            <p class="subhead">Web Developer | Graphic Designer | Photographer</p>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <nav class="navbar navbar-expand-md bg-color navbar-light sticky-top">
+            <a class="navbar-brand" href="../index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Projects </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="webDevProjects.html">Web Development</a>
+                            <a class="dropdown-item" href="../Graphic Design/graphicDesignProjects.html">Graphic
+                                Design</a>
+                            <a class="dropdown-item" href="../Photography/photography.html">Photography</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="webDevHomework.html">Homework</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../About Me/aboutMe.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../resume.html">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br />
+
+    <div class="col-12">
+        <div class="containerWebDev">
+            <h2>Web Development Projects</h2>
+            <p class="centerText">This page consists of previous Web Development projects that I have completed during
+                my classes that show my skills with Web Dev. The projects are divided by which language is used most
+                for each project.</p>
+        </div>
+    </div>
+    <br />
+    <br />
+
+
+    <!--Button Div-->
+    <div class="flex-container">
+
+        <!--HTML-->
+        <div>
+            <button type="button" class="btn btn-color-pink" role="button" id="readMoreHTML">HTML</button>
+        </div>
+        <!--End HTML-->
+
+
+        <!--CSS-->
+        <div>
+            <button type="button" class="btn btn-color-pink" role="button" id="readMoreCSS">CSS</button>
+        </div>
+        <!--End CSS-->
+
+
+        <!--SASS-->
+        <div>
+            <button type="button" class="btn btn-color-pink" role="button" id="readMoreSASS">SASS</button>
+        </div>
+        <!--End SASS-->
+
+
+        <!--JavaScript-->
+        <div>
+            <button type="button" class="btn btn-color-pink" role="button" id="readMoreJS">JavaScript</button>
+        </div>
+        <!--End JavaScript-->
+
+
+        <!--jQuery-->
+        <div>
+            <button type="button" class="btn btn-color-pink" role="button" id="readMorejQuery">jQuery</button>
+        </div>
+        <!--End jQuery-->
+
+
+        <!--PHP-->
+        <div>
+            <button type="button" class="btn btn-color-pink" role="button" id="readMorePHP">PHP</button>
+        </div>
+        <!--End PHP-->
+
+
+        <!--Node.js-->
+        <div>
+            <button type="button" class="btn btn-color-pink" role="button" id="readMoreNode">Node.js</button>
+        </div>
+        <!--End Node.js-->
+
+        <!-- WordPress -->
+        <div>
+            <button type="button" class="btn btn-color-pink" role="button" id="readMoreWP">WordPress</button>
+        </div>
+        <!-- End WordPress -->
+
+    </div>
+    <!--End Button Div-->
+    <br />
+
+
+
+    <!--Info Divs-->
+    <div class="readMoreDiv">
+
+        <!--HTML-->
+        <div class="card bg-light" id="htmlMore">
+            <div class="card-body">
+                <h4 class="card-title">Coffee Tree</h4>
+                <div class="viewProjectButton">
+                    <a href="WDV101/Final Project/homepage.htm" target="_blank" class="btn btn-color-drkBlue"
+                        role="button">View Project</a>
+                </div>
+                <br />
+                <p class="card-text">
+                    <strong>Class:</strong> WDV101, Fall 2017<br /><br />
+                    <strong>Project:</strong> This was the final project for my WDV101 class. We were given 3
+                    different companies to make a website for and a coffee shop was one of the options, so
+                    that's what I chose. This project needed to have a minimum of 5 pages, at least one page with 3
+                    columns, a table, a form, links to other pages on the site, links to other websites and
+                    pictures on the site
+                    <br /><br />
+                    <strong>What I Did:</strong> I decided to use the greens and browns because they remind
+                    me of coffee. I wanted to do a recipe page and a make your own mug page because I felt
+                    like those were things people like looking for (especially making their own mugs). Before this
+                    class
+                    I had no clue what HTML and CSS were (let alone the other languages I know now) so I feel like
+                    this
+                    project is a good example of where my skills were at the end of that class. It
+                    properly showcases everything I had learned in that first Web Development class.
+                    <br /><br />
+                    <strong>What I Learned:</strong> This is the first project where I had combined everything I had
+                    learned so far in Web Development. So everything you see in this project is what I learned -
+                    from
+                    changing the background color to making tables to making contact forms
+                    <br /><br />
+                    <strong>Tools I Used:</strong> I used HTML5 and CSS3 for this project
+                </p>
+            </div>
+        </div>
+        <!--End HTML-->
+
+
+
+        <!--CSS-->
+        <!--FFG-->
+        <div class="card bg-light" id="ffgMore">
+            <div class="card-body">
+                <h4 class="card-title">Float, Flex and Grid</h4>
+                <div class="viewProjectButtonThree">
+                    <a href="WDV205/FFG Project/float.html" target="_blank" class="btn btn-color-drkBlue"
+                        role="button">View Float Project</a>
+                    <a href="WDV205/FFG Project/flexbox.html" target="_blank" class="btn btn-color-drkBlue"
+                        role="button">View Flexbox Project</a>
+                    <a href="WDV205/FFG Project/grid.html" target="_blank" class="btn btn-color-drkBlue"
+                        role="button">View Grid Project</a>
+                </div>
+                <br />
+                <p class="card-text">
+                    <strong>Class:</strong> Advanced CSS, Summer 2018<br /><br />
+                    <strong>Project:</strong> For this project, my class was tasked with making one page three different
+                    ways: float property, flexbox layout and grid layout. We had to make a page with a header, a picture
+                    in the header, a nav bar, two column layout, a gallery in one column, a two column content-filled
+                    section in the other column, a form and a footer
+                    <br /><br />
+                    <strong>What I Did:</strong> I decided to use turquoise, coral and grey for the colors (I really
+                    liked that color combination at the time and it stuck), I also decided to use different borders to
+                    show the various sections of the page. I wanted to use my own pictures for this project because I
+                    had some practice pictures that weren't being used at the time
+                    <br /><br />
+                    <strong>What I Learned:</strong> I learned how to make three pages look like each other while using
+                    different layouts and properties and I learned how to use the flexbox and grid properties
+                    <br /><br />
+                    <strong>Tools I Used:</strong> I used HTML and SASS for this project
+                </p>
+            </div>
+        </div>
+        <!--End FFG-->
+
+
+        <!--Bootstrap-->
+        <div class="card bg-light" id="bootMore">
+            <div class="card-body">
+                <h4 class="card-title">Bootstrap</h4>
+                <div class="viewProjectButton">
+                    <a href="WDV205/Bootstrap Project/bootstrap.html" target="_blank" class="btn btn-color-drkBlue"
+                        role="button">View Project</a>
+                </div>
+                <br />
+                <p class="card-text">
+                    <strong>Class:</strong> Advanced CSS, Summer 2018<br /><br />
+                    <strong>Project:</strong> This wasn't an actual project I did for any of my classes, I decided to
+                    continue to make the same page with different technologies so I can better understand them and be
+                    able to make all the pages look alike. Even though this wasn't an actual project, I learned
+                    Bootstrap in my Advanced CSS class so I decided to group it with my Advanced CSS projects
+                    <br /><br />
+                    <strong>What I Did:</strong> The only difference between this project and the others is that this
+                    one primarily uses Bootstrap, I did use a little bit of flexbox for the main section
+                    <br /><br />
+                    <strong>What I Learned:</strong> Although I already knew how to use Bootstrap before this project,
+                    it was a nice brush up on my Bootstrap skills
+                    <br /><br />
+                    <strong>Tools I Used:</strong> I used HTML, SASS and Bootstrap for this project
+                </p>
+            </div>
+        </div>
+        <!--End Bootstrap-->
+        <!--End CSS-->
+
+
+
+        <!--SASS-->
+        <!--Pepper's Bakery-->
+        <div class="card bg-light" id="bakeryMore">
+            <div class="card-body">
+                <h4 class="card-title">Pepper's Bakery</h4>
+                <div class="viewProjectButton">
+                    <a href="WDV205/Pepper's Bakery/PeppersBakery.html" target="_blank" class="btn btn-color-drkBlue"
+                        role="button">View Project</a>
+                </div>
+                <br />
+                <p class="card-text">
+                    <strong>Project:</strong> For this project we needed to make a website that showed what all
+                    we had learned in the class (this was our final project). We needed to have 5 pages (I added
+                    in the recipes page as part of another project), we needed to have a page with at least 3
+                    columns, we needed to use advanced CSS features, the whole site needed to be responsive and we
+                    needed to have a form on one of the pages
+                    <br /><br />
+                    <strong>What I did:</strong> I decided to make my website about a bakery because when I
+                    was younger I really wanted to be a baker. I decided to use pink and green because they are
+                    nice and bright colors that went along with the theme I wanted the website to have. My goal
+                    for this site was to let people know about the bakery and become interested in it before
+                    they came for a visit. That's why I put some of the popular items on the website and
+                    why I put down the classes the bakery offers
+                    <br /><br />
+                    <strong>what I Learned:</strong> I learned how to implement different CSS features and
+                    style them to fit my page and I learned how to work with Bootstrap; how to find the
+                    classes I want to use and how to style them properly. I also learned how to make an
+                    entire website responsive
+                    <br /><br />
+                    <strong>Tools I Used:</strong> HTML and CSS (Bootstrap and SASS) were used to complete
+                    this project
+                </p>
+            </div>
+        </div>
+        <!--End Pepper's Bakery-->
+        <!--End SASS-->
+
+
+
+        <!--JavaScript-->
+        <!--Greeting Grades-->
+        <div class="card bg-light" id="greetingMore">
+            <div class="card-body">
+                <h4 class="card-title">Student Grades & Greeting</h4>
+                <div class="viewProjectButton">
+                    <a href="WDV221/Greeting Grades/studentGrades.html" target="_blank" class="btn btn-color-drkBlue"
+                        role="button">View Project</a>
+                </div>
+                <br />
+                <p class="card-text">
+                    <strong>Class:</strong> Intro JavaScript, Spring 2018 <br /><br />
+                    <strong>Project:</strong> This project is actually 2 different projects I combined. One
+                    project is a greeting function. The greeting changes based on the time of day you look at the
+                    webpage. The second one is grade project. If you enter in a percentage you get back the letter grade
+                    you have. These two projects work very well together and it made sense putting them on the same
+                    page, so that's what I decided to do
+                    <br /><br />
+                    <strong>What I did:</strong> Besides combining the code of these two projects, I also
+                    added in some CSS to make it look prettier than just a blank page with black text
+                    <br /><br />
+                    <strong>What I Learned:</strong> I learned how to customize the greetings (what they
+                    say and how they look), I also learned how to correspond a percentage with a letter grade
+                    and display a short message containing the letter grade
+                    <br /><br />
+                    <strong>Tools I Used:</strong> The tools I used are HTML, CSS and JavaScript
+                </p>
+            </div>
+        </div>
+        <!--end Greeting Grades-->
+
+
+        <!--ATM Machine-->
+        <div class="card bg-light" id="atmMore">
+            <div class="card-body">
+                <h4 class="card-title">ATM Machine</h4>
+                <div class="viewProjectButton">
+                    <a href="WDV221/ATM Machine/Project-ATM-Machine.htm" target="_blank" class="btn btn-color-drkBlue"
+                        role="button">View Project</a>
+                </div>
+                <br />
+                <p class="card-text">
+                    <strong>Class:</strong> Intro JavaScript, Spring 2018 <br /><br />
+                    <strong>Project:</strong> For this project, we were put into teams and we were tasked with
+                    making a functioning ATM machine. It will calculate the balance when someone deposits or
+                    withdraws money and it will display what the balance is. There also needs to be a reset
+                    button that clears out everything when clicked
+                    <br /><br />
+                    <strong>What I did:</strong> Me and my teammate decided to make a function for each
+                    piece of the machine. So, one function handled the deposit, another handled the withdraw, one
+                    displayed the balance and the last one reset the whole thing. I decided to add in some CSS
+                    to this project (our focus was more on the functionality of the page and not so much
+                    the look of it). I used two shades of green because it gives the page a nice, simple and
+                    professional look
+                    <br /><br />
+                    <strong>What I Learned:</strong> I learned how to break down a project and make
+                    functions for each part and get those functions to work properly. I also got more experience in
+                    working with someone else on the project, we were able to communicate well and get the
+                    project done on time
+                    <br /><br />
+                    <strong>Tools I Used:</strong> I used JavaScript and CSS (Bootstrap) for this project
+                </p>
+            </div>
+        </div>
+        <!--end ATM Machine-->
+
+
+        <!--Form Calculations-->
+        <div class="card bg-light" id="formMore">
+            <div class="card-body">
+                <h4 class="card-title">Form Calculations</h4>
+                <div class="viewProjectButton">
+                    <a href="WDV221/Form Calculations/formCalculations.html" target="_blank"
+                        class="btn btn-color-drkBlue" role="button">View Project</a>
+                </div>
+                <br />
+                <p class="card-text">
+                    <strong>Class:</strong> Intro JavaScript
+                    <strong>Project:</strong> This was the first skills test we had in the Intro JavaScript
+                    class. We were to make a form that would take an item price and multiply it by the quantity,
+                    display the sale price, the total price and make a list of what the customer has ordered. The form
+                    should also update the total price and the list items whenever a new item is entered in
+                    <br /><br />
+                    <strong>What I did:</strong> I decided to make a function per button needed (so a total
+                    of 3 functions). This helped me work on the skills test because I was taking it one step
+                    at a time, instead of trying to solve the whole thing at once. I added in some CSS because
+                    at the time the functionality of the form was more important then how it looks. My goal
+                    was to keep the page simple and to not take anything away from the form (because that is
+                    the most important part of the project)
+                    <br /><br />
+                    <strong>What I Learned:</strong> I learned how to make an item list that adds on an
+                    item every time you update it. Before this project, I hadn't made an ongoing list before so
+                    it was a little bit of a challenge to get it to work. But it wasn't long before I figured
+                    it out. The way I did it may seem longer than need be, but it works the way it's supposed
+                    to and that's good enough for me
+                    <br /><br />
+                    <strong>Tools I Used:</strong> I used JavaScript and CSS (Bootstrap) for this skills
+                    test
+                </p>
+            </div>
+        </div>
+        <!--end Form Calculations-->
+        <!--End JavaScript-->
+
+
+
+        <!--jQuery-->
+        <div class="card bg-light" id="recipeMore">
+            <div class="card-body">
+                <h4 class="card-title">Pepper's Bakery: Recipes page</h4>
+                <div class="viewProjectButton">
+                    <a href="WDV205/Pepper's Bakery/Recipes.html" target="_blank" class="btn btn-color-drkBlue"
+                        role="button">View Project</a>
+                </div>
+                <br />
+                <p class="card-text">
+                    <strong>Class:</strong> Advanced JavaScript, Fall 2018<br /><br />
+                    <strong>Project:</strong> This was the final project for my Advanced JavaScript class. We needed to
+                    create a recipes page with at least 3 recipes and each recipe shows half, normal and double servings
+                    as buttons (or another type of selector). The ingredients and the directions are supposed to change
+                    so it matches the amount of servings you clicked
+                    <br /><br />
+                    <strong>What I Did:</strong> Instead of making a whole new project I decided to add on to my
+                    Pepper's Bakery project because it would make it more complete. The first thing I did was choose an
+                    item to be on the page the whole time, that way the page didn't seem so empty. It was also a way for
+                    me to figure out how I wanted to format my recipes (which is why I didn't add in the other servings)
+                    <br /><br />
+                    <strong>What I Learned:</strong> I learned how to put multiple recipes and servings on one page
+                    using jQuery
+                    <br /><br />
+                    <strong>Tools I Used:</strong> I used jQuery and Bootstrap for this project
+                </p>
+            </div>
+        </div>
+        <!--End jQuery-->
+
+
+
+        <!--PHP-->
+        <div class="card bg-light" id="phpMore">
+            <div class="card-body">
+                <h4 class="card-title">Coffee Designs</h4>
+                <div class="viewProjectButton">
+                    <a href="WDV341/Coffee Designs/coffeeDesignHome.html" target="_blank" class="btn btn-color-drkBlue"
+                        role="button">View Project</a>
+                </div>
+                <br />
+                <p class="card-text">
+                    <strong>Class:</strong> Intro PHP, Fall 2018<br /><br />
+                    <strong>Project:</strong> This was the final project for my Intro PHP class. We were to make a
+                    website with at least 5 pages including a sign-in page. The site had to have a user login and an
+                    administrator login. The user login could have special privileges and the admin login should be able
+                    to add, insert and delete items. The different logins use roles and predetermined usernames and
+                    passwords in order to access them
+                    <br /><br />
+                    <strong>What I Did:</strong> I decided to turn one of my other projects into my PHP final. Coffee
+                    Designs was originally a PayPal site for my Website Application Components class. We had a series of
+                    projects where we used and modified PayPal buttons. The Coffee Designs site already had the store up
+                    and running so I decided to make more pages and add in a user and admin role. When you sign in as a
+                    user you get $2.00 off any purchase in the store as well as early access to new products. As the
+                    admin you are able to add and delete products
+                    <br /><br />
+                    <strong>What I Learned:</strong> I learned how to make a sign-in page for a website (I'm still
+                    working on the multi-user login part)
+                    <br /><br />
+                    <strong>Tools I Used:</strong> I used PHP and Bootstrap for this project
+                </p>
+            </div>
+        </div>
+        <!--End PHP-->
+
+
+
+        <!--Node.js-->
+        <div class="card bg-light" id="nodeMore">
+            <div class="card-body">
+                <h4 class="card-title">Node Website</h4>
+                <div class="viewProjectButton">
+                    <a href="https://advanced-javascript-node.herokuapp.com/" target="_blank"
+                        class="btn btn-color-drkBlue" role="button">View Project</a>
+                </div>
+                <p class="card-text">
+                    <strong>Class:</strong> Advanced Javascript, Fall 2018<br /><br />
+                    <strong>Project:</strong> This was the first time I had worked with Node.js. For this project, my
+                    class had to follow a Node.js tutorial to make the home page you see for the project. There is only
+                    one page so far, however this project got me interested in Node.js so one of my goals is to add more
+                    pages to this project.
+                    <br /><br />
+                    <strong>What I Did:</strong> Since I followed a tutorial, there wasn't anything that I did
+                    differently than what was in the tutorial
+                    <br /><br />
+                    <strong>What I Learned:</strong> I learned about how to work in Node.js
+                    <br /><br />
+                    <strong>Tools I Used:</strong> I used Node.js for this project
+                </p>
+            </div>
+        </div>
+        <!--End Node.js-->
+
+
+
+        <!--WordPress-->
+        <div class="card bg-light" id="wpMore">
+            <div class="card-body">
+                <h4 class="card-title">Scratch Cupcakes</h4>
+                <div class="viewProjectButton">
+                    <a href="WDV240/wpfinal/index.php" target="_blank" class="btn btn-color-drkBlue" role="button">View
+                        Project</a>
+                </div>
+                <p class="card-text">
+                    <strong>Class:</strong>WordPress, Spring 2019<br /><br />
+                    <strong>Project:</strong> For this project I needed to choose a company and make a functioning
+                    website and online store for that site. The company needed to have enough products to have multiple
+                    categories in their store, a contact form, and other pages that were specifically related to the
+                    company.
+                    <br /><br />
+                    <strong>What I Did:</strong> The company I chose for this project is Scratch Cupcakes. I decided to
+                    update Scratch's website because it is out of date and it's not as functional as it could be. So I
+                    took all the information from their current site and added it to this new site. I added in some
+                    forms, organized the site a little bit more, and put some of their cupcakes in an online store (only
+                    a sample of their cupcakes are on the store).
+                    <br /><br />
+                    <strong>What I Learned:</strong> I learned about how to update a website and make it more modern
+                    <br /><br />
+                    <strong>Tools I Used:</strong> I used WordPress for this project
+                </p>
+            </div>
+        </div>
+        <!--End WordPress-->
+
+    </div>
+    <!--End Info Div-->
+
+
+
+
+    <div class="col-12">
+        <br />
+        <div class="flex-containerTopButton">
+            <div>
+                <a href="#top" class="btn btn-color-pink" role="button">Go To Top</a>
+            </div>
+        </div>
+        <br />
+    </div>
+
+    <div class="col-12">
+        <footer class="footer">
+            <div class="containerFooter">
+                <p class="text-white">Taylor Richards | Web Developer | Graphic Designer | Photographer</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

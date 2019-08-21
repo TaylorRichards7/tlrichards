@@ -1,0 +1,124 @@
+/* Web Dev Projects CSS */
+/* Body */
+.containerWebDev {
+  margin-left: auto;
+  margin-right: auto;
+  border: thick solid #1D4463;
+  width: 75%;
+  padding: 0.5%;
+}
+
+h2 {
+  color: #FF74B6;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+  font-size: 2.3em;
+}
+
+h4 {
+  color: #1D4463;
+  text-align: center;
+}
+
+.centerText {
+  text-align: center;
+}
+
+/* Flexbox */
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 35%;
+  margin: 0 auto;
+}
+
+.flex-container > div {
+  padding: 0.7%;
+}
+
+/* Read More Div */
+.readMoreDiv {
+  margin: 0 auto;
+  width: 75%;
+}
+
+/* Buttons */
+.viewProjectButton {
+  margin: 0 auto;
+  width: 11.1%;
+}
+
+.viewProjectButtonTwo {
+  margin: 0 auto;
+  width: 27%;
+}
+
+.viewProjectButtonThree {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 27%;
+}
+
+/* Button IDs */
+#htmlMore {
+  display: none;
+}
+
+#ffgMore {
+  display: none;
+}
+
+#flexMore {
+  display: none;
+}
+
+#bakeryMore {
+  display: none;
+}
+
+#bootMore {
+  display: none;
+}
+
+#greetingMore {
+  display: none;
+}
+
+#atmMore {
+  display: none;
+}
+
+#formMore {
+  display: none;
+}
+
+#recipeMore {
+  display: none;
+}
+
+#jsonMore {
+  display: none;
+}
+
+#phpMore {
+  display: none;
+}
+
+#sqlMore {
+  display: none;
+}
+
+#nodeMore {
+  display: none;
+}
+
+#reactMore {
+  display: none;
+}
+
+#wpMore {
+  display: none;
+}
+
+/*# sourceMappingURL=webDevProjectsCSS.css.map */

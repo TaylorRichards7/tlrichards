@@ -1,0 +1,74 @@
+/* Web Development Homework */
+/* Body */
+.containerWebDev {
+  margin-left: auto;
+  margin-right: auto;
+  border: thick solid #1D4463;
+  width: 75%;
+  padding: 0.5%;
+}
+
+h2 {
+  color: #FF74B6;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+  font-size: 2.3em;
+}
+
+h4 {
+  color: #FF74B6;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+  font-size: 1.7em;
+}
+
+a {
+  color: #FF74B6;
+}
+
+a:hover {
+  color: #1D4463;
+  text-decoration: none;
+}
+
+.centerText {
+  text-align: center;
+}
+
+/* Flexbox */
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 35%;
+  margin: 0 auto;
+}
+
+.flex-container > div {
+  padding: 0.7%;
+}
+
+/* Read More Div */
+.readMoreDiv {
+  margin: 0 auto;
+  width: 75%;
+}
+
+/* Button Ids */
+#etsMore {
+  display: none;
+}
+
+#wpMore {
+  display: none;
+}
+
+#drupalMore {
+  display: none;
+}
+
+#webDesignMore {
+  display: none;
+}
+
+/*# sourceMappingURL=webDevHomeworkCSS.css.map */
