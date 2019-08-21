@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Designs Shop</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+    <link rel="stylesheet" href="coffeeDesignCSS.css">
+    <link rel="stylesheet" href="shopCSS.css">
+</head>
+
+<body>
+    <section id="top">
+    </section>
+
+    <div class="jumbotron jumbotron-fluid">
+        <p class="header">Coffee Designs</p>
+        <p class="subhead">It's a clay thing</p>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-color justify-content-center sticky-top">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="coffeeDesignHome.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="coffeeDesignProjects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="coffeeDesignShop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutCoffeeDesign.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactCoffeeDesign.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="loginPage.php">Hi there, Sign in</a>
+            </li>
+        </ul>
+    </nav>
+    <br />
+    <br />
+
+    <h2>Shop at Coffee Designs</h2>
+    <br />
+
+    <!--Add To Cart-->
+    <div class="container">
+        <div class="card-columns">
+
+            <!-- Coffee Earrings -->
+            <div class="card bg-colorltPink">
+                <img class="card-img-top" src="images/coffeeEarrings.jpg" alt="Coffee Earrings">
+                <div class="card-body">
+                    <h4 class="card-title">Coffee Charm</h4>
+                    <p class="card-text">Clay coffee earrings<br /> Originally made as a Christmas gift for my mom</p>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post"
+                        class="coffeeButton">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="6K9T8KP8TEAUU">
+                        <table>
+                            <tr>
+                                <td><input type="hidden" name="on0" value="Coffee Charms">Coffee Charms</td>
+                            </tr>
+                            <tr>
+                                <td><select name="os0">
+                                        <option value="Earrings">Earrings $5.00 USD</option>
+                                        <option value="Bracelet">Bracelet $7.00 USD</option>
+                                        <option value="Necklace">Necklace $9.00 USD</option>
+                                    </select> </td>
+                            </tr>
+                        </table>
+                        <input type="hidden" name="currency_code" value="USD">
+                        <button type="submit" class="btn btn-color">Add to Cart</button>
+                    </form>
+
+                </div>
+            </div>
+            <!-- End coffee earrings -->
+
+
+            <!-- Chocolate Frapp -->
+            <div class="card bg-colorltPink" id="chocolateFrapp">
+                <img class="card-img-top" src="images/chocolateFrapp.jpg" alt="Chocolate Frapp">
+                <div class="card-body">
+                    <h4 class="card-title">Chocolate Frapp</h4>
+                    <p class="card-text">Clay chocolate frapp<br />Type in the text box how you want yours to look!</p>
+                    <div id="paypal-button"></div>
+                    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+                    <script>
+                        paypal.Button.render({
+                            // Configure environment
+                            env: 'sandbox',
+                            client: {
+                                sandbox: 'Ae622U4MclXLrj13g8JnvEleUs-aF6b_icEqXf85JguVJT9aJrut1n4DlkEP1GtLJYtpu2AFZwIcep1c',
+                                production: 'demo_production_client_id'
+                            },
+                            // Customize button (optional)
+                            locale: 'en_US',
+                            style: {
+                                size: 'small',
+                                color: 'gold',
+                                shape: 'pill',
+                            },
+                            // Set up a payment
+                            payment: function (data, actions) {
+                                return actions.payment.create({
+                                    transactions: [{
+                                        amount: {
+                                            total: '4.99',
+                                            currency: 'USD'
+                                        }
+                                    }]
+                                });
+                            },
+                            // Execute the payment
+                            onAuthorize: function (data, actions) {
+                                return actions.payment.execute().then(function () {
+                                    // Show a confirmation message to the buyer
+                                    window.alert('Thank you for your purchase!');
+                                });
+                            }
+                        }, '#paypal-button');
+
+                    </script>
+                </div>
+            </div>
+            <!-- End chocolate frapp -->
+
+
+            <!-- Camera Earrings -->
+            <div class="card bg-colorltPink">
+                <img class="card-img-top" src="images/cameraEarrings.jpg" alt="Camera Earrings">
+                <div class="card-body">
+                    <h4 class="card-title">Camera Charm</h4>
+                    <p class="card-text">Clay camera earrings<br /> Originally made because I love taking
+                        pictures</p>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post"
+                        class="cameraButton">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="Z9VM2M2EZ9G44">
+                        <table>
+                            <tr>
+                                <td><input type="hidden" name="on0" value="Camera Charms">Camera Charms</td>
+                            </tr>
+                            <tr>
+                                <td><select name="os0">
+                                        <option value="Earrings">Earrings $5.00 USD</option>
+                                        <option value="Bracelet">Bracelet $7.00 USD</option>
+                                        <option value="Necklace">Necklace $9.00 USD</option>
+                                    </select> </td>
+                            </tr>
+                        </table>
+                        <input type="hidden" name="currency_code" value="USD">
+                        <button type="submit" class="btn btn-color">Add to Cart</button>
+                    </form>
+
+                </div>
+            </div>
+            <!-- End camera earrings -->
+        </div>
+    </div>
+    <br />
+
+
+
+    <div class="container">
+        <div class="card-columns">
+
+            <!-- Pancake Bracelet -->
+            <div class="card bg-colordkPink">
+                <img class="card-img-top" src="images/pancakeBracelet.jpg" alt="Pancake Bracelet">
+                <div class="card-body">
+                    <h4 class="card-title">Pancake Charm</h4>
+                    <p class="card-text">Clay pancake bracelet<br /> First time I used dry pastels and liquid
+                        clay</p>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post"
+                        class="pancakeButton">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="CWMEME49DNSBG">
+                        <table>
+                            <tr>
+                                <td><input type="hidden" name="on0" value="Pancake Charms">Pancake Charms</td>
+                            </tr>
+                            <tr>
+                                <td><select name="os0">
+                                        <option value="Earrings">Earrings $5.00 USD</option>
+                                        <option value="Bracelet">Bracelet $7.00 USD</option>
+                                        <option value="Necklace">Necklace $9.00 USD</option>
+                                    </select> </td>
+                            </tr>
+                        </table>
+                        <input type="hidden" name="currency_code" value="USD">
+                        <button type="submit" class="btn btn-color">Add to Cart</button>
+                    </form>
+
+                </div>
+            </div>
+            <!-- End pancake bracelet -->
+
+
+            <!-- Bread Bracelet -->
+            <div class="card bg-colordkPink">
+                <img class="card-img-top" src="images/breadBracelet.jpg" alt="Bread Bracelet">
+                <div class="card-body">
+                    <h4 class="card-title">Bread Charm</h4>
+                    <p class="card-text">Clay bread bracelet<br /> Practiced making bread out of clay</p>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post"
+                        class="breadButton">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="X4M54VNE66EE2">
+                        <table>
+                            <tr>
+                                <td><input type="hidden" name="on0" value="Bread Charms">Bread Charms</td>
+                            </tr>
+                            <tr>
+                                <td><select name="os0">
+                                        <option value="Earrings">Earrings $5.00 USD</option>
+                                        <option value="Bracelet">Bracelet $7.00 USD</option>
+                                        <option value="Necklace">Necklace $9.00 USD</option>
+                                    </select> </td>
+                            </tr>
+                        </table>
+                        <input type="hidden" name="currency_code" value="USD">
+                        <button type="submit" class="btn btn-color">Add to Cart</button>
+                    </form>
+
+                </div>
+            </div>
+            <!-- End bread bracelet -->
+
+
+            <!-- Egg and Bacon Necklace -->
+            <div class="card bg-colordkPink">
+                <img class="card-img-top" src="images/eggBaconNecklace.jpg" alt="Egg and Bacon Necklace">
+                <div class="card-body">
+                    <h4 class="card-title">Egg and Bacon Charm</h4>
+                    <p class="card-text">Clay egg and bacon necklace<br /> First necklace I made with my niece</p>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post"
+                        class="eggBaconButton">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="WHUNNMDC2H8YJ">
+                        <table>
+                            <tr>
+                                <td><input type="hidden" name="on0" value="Egg and Bacon Charms">Egg and Bacon Charms
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><select name="os0">
+                                        <option value="Earrings">Earrings $5.00 USD</option>
+                                        <option value="Bracelet">Bracelet $7.00 USD</option>
+                                        <option value="Necklace">Necklace $9.00 USD</option>
+                                    </select> </td>
+                            </tr>
+                        </table>
+                        <input type="hidden" name="currency_code" value="USD">
+                        <button type="submit" class="btn btn-color">Add to Cart</button>
+                    </form>
+
+                </div>
+            </div>
+            <!-- End egg and bacon necklace -->
+        </div>
+    </div>
+    <br />
+
+
+
+    <div class="container">
+        <div class="card-columns">
+
+            <!-- Milk and Cookie Necklace -->
+            <div class="card bg-colorBrown">
+                <img class="card-img-top" src="images/milkCookieNecklace.jpg" alt="Milk and Cookie Necklace">
+                <div class="card-body">
+                    <h4 class="card-title">Milk and Cookie Charm</h4>
+                    <p class="card-text">Clay milk and cookie necklace<br /> Made for my niece and her friend</p>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post"
+                        class="milkCookieButton">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="NWYJVXGCVXVC6">
+                        <table>
+                            <tr>
+                                <td><input type="hidden" name="on0" value="Milk and Cookie Charms">Milk and Cookie
+                                    Charms</td>
+                            </tr>
+                            <tr>
+                                <td><select name="os0">
+                                        <option value="Earrings">Earrings $5.00 USD</option>
+                                        <option value="Bracelet">Bracelet $7.00 USD</option>
+                                        <option value="Necklace">Necklace $9.00 USD</option>
+                                    </select> </td>
+                            </tr>
+                        </table>
+                        <input type="hidden" name="currency_code" value="USD">
+                        <button type="submit" class="btn btn-color">Add to Cart</button>
+                    </form>
+
+                </div>
+            </div>
+            <!-- End milk and cookie necklace -->
+
+
+            <!-- Pizza Necklace -->
+            <div class="card bg-colorBrown">
+                <img class="card-img-top" src="images/pizzaNecklace.jpg" alt="Pizza Necklace">
+                <div class="card-body">
+                    <h4 class="card-title">Pizza Charm</h4>
+                    <p class="card-text">Clay pizza necklace<br /> Inspiration: A pillow I made for my nephew</p>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post"
+                        class="pizzaButton">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="5D4T7SNSUW7LE">
+                        <table>
+                            <tr>
+                                <td><input type="hidden" name="on0" value="Pizza Charms">Pizza Charms</td>
+                            </tr>
+                            <tr>
+                                <td><select name="os0">
+                                        <option value="Earrings">Earrings $5.00 USD</option>
+                                        <option value="Bracelet">Bracelet $7.00 USD</option>
+                                        <option value="Necklace">Necklace $9.00 USD</option>
+                                    </select> </td>
+                            </tr>
+                        </table>
+                        <input type="hidden" name="currency_code" value="USD">
+                        <button type="submit" class="btn btn-color">Add to Cart</button>
+                    </form>
+
+                </div>
+            </div>
+            <!-- End pizza necklace -->
+
+
+            <!-- Subscribe and View Cart Buttons -->
+            <div class="card bg-colorltPink">
+                <div class="card-body">
+
+                    <br />
+                    <!-- View Cart Button -->
+                    <h4 class="card-title">View Items in Your Cart!</h4>
+                    <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post"
+                        class="viewCartButton">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="encrypted"
+                            value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                        <button type="submit" class="btn btn-color">View Cart</button>
+                    </form>
+
+                    <!-- End view cart button -->
+                    <br />
+                    <br />
+
+
+                    <!-- Subscribe Button -->
+                    <h4 class="card-title">Subscribe to our Newsletter!</h4>
+                    <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top"
+                        class="subscribeButton">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="R89ZHWTA9Q5R6">
+                        <button type="submit" class="btn btn-color">Subscribe</button>
+                    </form>
+
+                    <!-- End subscribe button -->
+                </div>
+            </div>
+            <!-- End subscribe and view cart buttons -->
+        </div>
+    </div>
+    <!--End add to cart-->
+    <br />
+
+
+    <!--Digital Good-->
+    <!-- <div class="containerDigital">
+        <h4>Buy Coffee Poster</h4>
+        <h5>(Limited Edition)</h5>
+        <div class="card img-fluid" style="width:450px">
+            <img class="card-img-top" src="images/coffeePoster.jpg" alt="Coffee Poster" style="width:100%">
+        </div><br />
+        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top" class="digitalButton">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="3G82BWVCGUTGS">
+            <button type="submit" class="btn btn-color">Buy Now</button>
+        </form>
+    </div>
+    <br /> -->
+    <!--end digital good-->
+
+
+    <div class="topButtonContainer">
+        <a href="#top" class="btn btn-color" role="button">Go to top</a>
+    </div>
+    <br />
+
+
+    <footer class="footer">
+        <div class="containerFooter">
+            <p class="text">Coffee Designs <br /> 1234 Coffee Dr <br /> 515-123-4567</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
