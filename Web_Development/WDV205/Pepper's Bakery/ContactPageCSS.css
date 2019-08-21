@@ -1,0 +1,25 @@
+/*Contact Pepper's Bakery*/
+/*Body*/
+h1 {
+  color: #ff99bb;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  color: #ff99bb;
+}
+
+.container {
+  border: thick solid #00802b;
+}
+
+#map {
+  width: 65%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border: thick solid #ff99bb;
+}
+
+/*# sourceMappingURL=ContactPageCSS.css.map */
