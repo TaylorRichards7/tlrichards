@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pepper's Bakery Recipes</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="PeppersBakeryCSS.css" type="text/css">
+    <link rel="stylesheet" href="RecipesPageCSS.css" type="text/css">
+
+
+    <script>
+        $(document).ready(function (e) {
+
+            //ice cream cupcakes
+            $("#cupcakes").click(function (e) {
+                $("#iceCreamCupcakes").slideToggle();
+                $("#giantMoltenCake").hide();
+                $("#smallCakes").hide();
+                $("#normalCakes").hide();
+                $("#bigCakes").hide();
+                $("#mixedBerryPie").hide();
+                $("#smallPie").hide();
+                $("#normalPie").hide();
+                $("#bigPie").hide();
+                $("#frostedSugarCookie").hide();
+                $("#smallCookie").hide();
+                $("#normalCookie").hide();
+                $("#bigCookie").hide();
+                $("#cannoliPastry").hide();
+                $("#smallPastry").hide();
+                $("#normalPastry").hide();
+                $("#bigPastry").hide();
+            });
+
+
+
+            $("#6Cupcakes").click(function (e) {
+                $("#smallCupcake").slideToggle();
+                $("#normalCupcake").hide();
+                $("#bigCupcake").hide();
+            });
+
+            $("#cupcakeIngredientsHalf").click(function (e) {
+                $("#smallIngredientsCupcake").slideToggle();
+            });
+
+            $("#cupcakeDirectionsHalf").click(function (e) {
+                $("#smallDirectionsCupcake").slideToggle();
+            });
+
+
+
+            $("#12Cupcakes").click(function (e) {
+                $("#normalCupcake").slideToggle();
+                $("#smallCupcake").hide();
+                $("#bigCupcake").hide();
+            });
+
+            $("#cupcakeIngredientsNormal").click(function (e) {
+                $("#normalIngredientsCupcake").slideToggle();
+            });
+
+            $("#cupcakeDirectionsNormal").click(function (e) {
+                $("#normalDirectionsCupcake").slideToggle();
+            });
+
+
+
+            $("#24Cupcakes").click(function (e) {
+                $("#bigCupcake").slideToggle();
+                $("#smallCupcake").hide();
+                $("#normalCupcake").hide();
+            });
+
+            $("#cupcakeIngredientsDouble").click(function (e) {
+                $("#bigIngredientsCupcake").slideToggle();
+            });
+
+            $("#cupcakeDirectionsDouble").click(function (e) {
+                $("#bigDirectionsCupcake").slideToggle();
+            });
+            // end ice cream cupcakes
+
+
+
+
+            //giant molten cake
+            $("#cakes").click(function (e) {
+                $("#giantMoltenCake").slideToggle();
+                $("#iceCreamCupcakes").hide();
+                $("#smallCupcake").hide();
+                $("#normalCupcake").hide();
+                $("#bigCupcake").hide();
+                $("#mixedBerryPie").hide();
+                $("#smallPie").hide();
+                $("#normalPie").hide();
+                $("#bigPie").hide();
+                $("#frostedSugarCookie").hide();
+                $("#smallCookie").hide();
+                $("#normalCookie").hide();
+                $("#bigCookie").hide();
+                $("#cannoliPastry").hide();
+                $("#smallPastry").hide();
+                $("#normalPastry").hide();
+                $("#bigPastry").hide();
+            });
+
+
+
+            $("#4Cakes").click(function (e) {
+                $("#smallCakes").slideToggle();
+                $("#normalCakes").hide();
+                $("#bigCakes").hide();
+            });
+
+            $("#cakeIngredientsSmall").click(function (e) {
+                $("#smallIngredientsCake").slideToggle();
+            });
+
+            $("#cakeDirectionsSmall").click(function (e) {
+                $("#smallDirectionsCake").slideToggle();
+            });
+
+
+
+            $("#8Cakes").click(function (e) {
+                $("#normalCakes").slideToggle();
+                $("#smallCakes").hide();
+                $("#bigCakes").hide();
+            });
+
+            $("#cakeIngredientsNormal").click(function (e) {
+                $("#normalIngredientsCake").slideToggle();
+            });
+
+            $("#cakeDirectionsNormal").click(function (e) {
+                $("#normalDirectionsCake").slideToggle();
+            });
+
+
+
+            $("#16Cakes").click(function (e) {
+                $("#bigCakes").slideToggle();
+                $("#normalCakes").hide();
+                $("#smallCakes").hide();
+            });
+
+            $("#cakeIngredientsBig").click(function (e) {
+                $("#bigIngredientsCake").slideToggle();
+            });
+
+            $("#cakeDirectionsBig").click(function (e) {
+                $("#bigDirectionsCake").slideToggle();
+            });
+            //end giant molten cake
+
+
+
+
+            //mixed berry pie
+            $("#pies").click(function (e) {
+                $("#mixedBerryPie").slideToggle();
+                $("#iceCreamCupcakes").hide();
+                $("#smallCupcake").hide();
+                $("#normalCupcake").hide();
+                $("#bigCupcake").hide();
+                $("#giantMoltenCake").hide();
+                $("#smallCakes").hide();
+                $("#normalCakes").hide();
+                $("#bigCakes").hide();
+                $("#frostedSugarCookie").hide();
+                $("#smallCookie").hide();
+                $("#normalCookie").hide();
+                $("#bigCookie").hide();
+                $("#cannoliPastry").hide();
+                $("#smallPastry").hide();
+                $("#normalPastry").hide();
+                $("#bigPastry").hide();
+            });
+
+
+
+            $("#4Pie").click(function (e) {
+                $("#smallPie").slideToggle();
+                $("#normalPie").hide();
+                $("#bigPie").hide();
+            });
+
+            $("#pieIngredientsSmall").click(function (e) {
+                $("#smallIngredientsPie").slideToggle();
+            });
+
+            $("#pieDirectionsSmall").click(function (e) {
+                $("#smallDirectionsPie").slideToggle();
+            });
+
+
+
+            $("#8Pie").click(function (e) {
+                $("#normalPie").slideToggle();
+                $("#smallPie").hide();
+                $("#bigPie").hide();
+            });
+
+            $("#pieIngredientsNormal").click(function (e) {
+                $("#normalIngredientsPie").slideToggle();
+            });
+
+            $("#pieDirectionsNormal").click(function (e) {
+                $("#normalDirectionsPie").slideToggle();
+            });
+
+
+
+            $("#16Pie").click(function (e) {
+                $("#bigPie").slideToggle();
+                $("#normalPie").hide();
+                $("#smallPie").hide();
+            });
+
+            $("#pieIngredientsBig").click(function (e) {
+                $("#bigIngredientsPie").slideToggle();
+            });
+
+            $("#pieDirectionsBig").click(function (e) {
+                $("#bigDirectionsPie").slideToggle();
+            });
+            //end mixed berry pie
+
+
+
+
+            //frosted sugar cookie
+            $("#cookies").click(function (e) {
+                $("#frostedSugarCookie").slideToggle();
+                $("#iceCreamCupcakes").hide();
+                $("#smallCupcake").hide();
+                $("#normalCupcake").hide();
+                $("#bigCupcake").hide();
+                $("#giantMoltenCake").hide();
+                $("#smallCakes").hide();
+                $("#normalCakes").hide();
+                $("#bigCakes").hide();
+                $("#mixedBerryPie").hide();
+                $("#smallPie").hide();
+                $("#normalPie").hide();
+                $("#bigPie").hide();
+                $("#cannoliPastry").hide();
+                $("#smallPastry").hide();
+                $("#normalPastry").hide();
+                $("#bigPastry").hide();
+            });
+
+
+
+            $("#18Cookie").click(function (e) {
+                $("#smallCookie").slideToggle();
+                $("#normalCookie").hide();
+                $("#bigCookie").hide();
+            });
+
+            $("#cookieIngredientsSmall").click(function (e) {
+                $("#smallIngredientsCookie").slideToggle();
+            });
+
+            $("#cookieDirectionsSmall").click(function (e) {
+                $("#smallDirectionsCookie").slideToggle();
+            });
+
+
+
+            $("#36Cookie").click(function (e) {
+                $("#normalCookie").slideToggle();
+                $("#smallCookie").hide();
+                $("#bigCookie").hide();
+            });
+
+            $("#cookieIngredientsNormal").click(function (e) {
+                $("#normalIngredientsCookie").slideToggle();
+            });
+
+            $("#cookieDirectionsNormal").click(function (e) {
+                $("#normalDirectionsCookie").slideToggle();
+            });
+
+
+
+            $("#72Cookie").click(function (e) {
+                $("#bigCookie").slideToggle();
+                $("#normalCookie").hide();
+                $("#smallCookie").hide();
+            });
+
+            $("#cookieIngredientsBig").click(function (e) {
+                $("#bigIngredientsCookie").slideToggle();
+            });
+
+            $("#cookieDirectionsBig").click(function (e) {
+                $("#bigDirectionsCookie").slideToggle();
+            });
+            //end frosted sugar cookie
+
+
+
+
+            //cannoli
+            $("#pasteries").click(function (e) {
+                $("#cannoliPastry").slideToggle();
+                $("#iceCreamCupcakes").hide();
+                $("#smallCupcake").hide();
+                $("#normalCupcake").hide();
+                $("#bigCupcake").hide();
+                $("#giantMoltenCake").hide();
+                $("#smallCakes").hide();
+                $("#normalCakes").hide();
+                $("#bigCakes").hide();
+                $("#mixedBerryPie").hide();
+                $("#smallPie").hide();
+                $("#normalPie").hide();
+                $("#bigPie").hide();
+                $("#frostedSugarCookie").hide();
+                $("#smallCookie").hide();
+                $("#normalCookie").hide();
+                $("#bigCookie").hide();
+            });
+
+
+
+            $("#15Cannoli").click(function (e) {
+                $("#smallPastry").slideToggle();
+                $("#normalPastry").hide();
+                $("#bigPastry").hide();
+            });
+
+            $("#pastryIngredientsSmall").click(function (e) {
+                $("#smallIngredientsPastry").slideToggle();
+            });
+
+            $("#pastryDirectionsSmall").click(function (e) {
+                $("#smallDirectionsPastry").slideToggle();
+            });
+
+
+
+            $("#30Cannoli").click(function (e) {
+                $("#normalPastry").slideToggle();
+                $("#smallPastry").hide();
+                $("#bigPastry").hide();
+            });
+
+            $("#pastryIngredientsNormal").click(function (e) {
+                $("#normalIngredientsPastry").slideToggle();
+            });
+
+            $("#pastryDirectionsNormal").click(function (e) {
+                $("#normalDirectionsPastry").slideToggle();
+            });
+
+
+
+            $("#60Cannoli").click(function (e) {
+                $("#bigPastry").slideToggle();
+                $("#normalPastry").hide();
+                $("#smallPastry").hide();
+            });
+
+            $("#pastryIngredientsBig").click(function (e) {
+                $("#bigIngredientsPastry").slideToggle();
+            });
+
+            $("#pastryDirectionsBig").click(function (e) {
+                $("#bigDirectionsPastry").slideToggle();
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <section id="top">
+    </section>
+
+    <div class="jumbotron jumbotron-fluid">
+        <p class="header">Pepper's Bakery</p>
+        <p class="subhead">Allergy friendly bakery</p>
+    </div>
+
+    <nav class="navbar navbar-expand-md bg-color navbar-dark">
+        <a class="navbar-brand" href="PeppersBakery.html">Pepper's Bakery</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Bakery.html">Bakery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Special.html">Special Events & Classes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Recipes.html">Recipes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+
+    <h1>Recipes</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>On this page we will provide the recipes to some of our most requested/bought items. There is
+                    one recipe for cookies, pies, cakes, cupcakes and pastries. You can half the servings, keep it
+                    the same, or you can double the servings.</p>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <div class="containerButton">
+        <button type="button" class="btn btn-outline-light" id="cupcakes">Cupcakes</button>
+        <button type="button" class="btn btn-outline-light" id="cakes">Cakes</button>
+        <button type="button" class="btn btn-outline-light" id="pies">Pies</button>
+        <button type="button" class="btn btn-outline-light" id="cookies">Cookies</button>
+        <button type="button" class="btn btn-outline-light" id="pasteries">Pasteries</button>
+    </div>
+    <br />
+
+
+    <!-- Ice Cream Cupcakes for the Cupcake Button -->
+    <div class="recipesContainer" id="iceCreamCupcakes">
+        <h2>Ice Cream Cupcakes</h2>
+        <img src="images/iceCreamCupcake.png" alt="Ice Cream Cupcake" class="mx-auto d-block">
+        <br />
+        <div class="containerButton2">
+            <button type="button" class="btn btn-outline-light" id="6Cupcakes">6 Cupcakes</button>
+            <button type="button" class="btn btn-outline-light" id="12Cupcakes">12 Cupcakes</button>
+            <button type="button" class="btn btn-outline-light" id="24Cupcakes">24 Cupcakes</button>
+        </div>
+        <br />
+
+        <!-- Half -->
+        <div class="recipesContainer2" id="smallCupcake">
+            <h4>Makes 6 Cupcakes</h4>
+            <p class="centerText">
+                Prep Time: 5 minutes<br />
+                Total Time: 2 hours 30 minutes<br />
+                Difficulty: Easy<br />
+                Servings: 6 cupcakes<br />
+            </p>
+            <div id="ingredientsDiv">
+                <button type="button" class="btn btn-outline-success" id="cupcakeIngredientsHalf">Ingredients</button>
+            </div>
+            <div id="smallIngredientsCupcake">
+                <p>
+                    <ul>
+                        <li>1 box chocolate cake mix (plus ingredients to make it)</li>
+                        <li>3 cups (or 1 1/2 pints) ice cream (choose your favorite kind!)</li>
+                        <li>1 cup whipped cream</li>
+                        <li>1/2 cups melted semisweet chocolate chips</li>
+                        <li>1/4 cups of any topping you would like</li>
+                    </ul>
+                </p>
+            </div>
+            <br />
+            <div id="directionsDiv">
+                <button type="button" class="btn btn-outline-success" id="cupcakeDirectionsHalf">Directions</button>
+            </div>
+            <div id="smallDirectionsCupcake">
+                <p>
+                    <ol>
+                        <li>Preheat the oven to 350 degrees F and line a muffin tin with 6 cupcake liners. Prepare
+                            the
+                            cupcake batter according to the directions on the box and put a quarter of the batter
+                            in
+                            the
+                            liners (You can freeze the leftover batter for up to a month)</li>
+                        <li>Bake about 15 minutes or until a toothpick comes out clean, allow the cupcakes to cool
+                            before
+                            putting in ice cream</li>
+                        <li>Use a melon baller (or a spoon) and scoop out the middles of each cupcake (you are
+                            going to
+                            create a well in the cupcake). Trim the bottoms of the tops so they are flat, then set
+                            them
+                            aside</li>
+                        <li>Fill the cupcakes with ice cream and cover with the tops, place in the freezer for
+                            about 1
+                            1/2
+                            - 2 hours</li>
+                        <li>When the cupcakes are firm, add the whipped cream, drizzle on the melted chocolate, and
+                            add
+                            any
+                            other toppings</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Normal -->
+        <div class="recipesContainer2" id="normalCupcake">
+            <h4>Makes 12 Cupcakes</h4>
+            <p class="centerText">
+                Prep Time: 5 minutes<br />
+                Total Time: 2 hours 30 minutes<br />
+                Difficulty: Easy<br />
+                Servings: 12 cupcakes<br />
+            </p>
+            <div id="ingredientsDiv">
+                <button type="button" class="btn btn-outline-success" id="cupcakeIngredientsNormal">Ingredients</button>
+            </div>
+            <div id="normalIngredientsCupcake">
+                <p>
+                    <ul>
+                        <li>1 box chocolate cake mix (plus ingredients to make it)</li>
+                        <li>6 cups (or 1 1/2 qt.) ice cream (choose your favorite kind!)</li>
+                        <li>2 cups whipped cream</li>
+                        <li>1 cup melted semisweet chocolate chips</li>
+                        <li>1/2 cup of any topping you would like</li>
+                    </ul>
+                </p>
+            </div>
+            <br />
+            <div id="directionsDiv">
+                <button type="button" class="btn btn-outline-success" id="cupcakeDirectionsNormal">Directions</button>
+            </div>
+            <div id="normalDirectionsCupcake">
+                <p>
+                    <ol>
+                        <li>Preheat the oven to 350 degrees F and line a muffin tin with 12 cupcake liners. Prepare
+                            the
+                            cupcake batter according to the directions on the box and put half the batter in the
+                            liners
+                            (You can freeze the leftover batter for up to a month)</li>
+                        <li>Bake about 15-20 minutes or until a toothpick comes out clean, allow the cupcakes to
+                            cool
+                            before
+                            putting in ice cream</li>
+                        <li>Use a melon baller (or a spoon) and scoop out the middles of each cupcake (you are
+                            going to
+                            create a well in the cupcake). Trim the bottoms of the tops so they are flat, then set
+                            them
+                            aside</li>
+                        <li>Fill the cupcakes with ice cream and cover with the tops, place in the freezer for
+                            about 1
+                            1/2
+                            - 2 hours</li>
+                        <li>When the cupcakes are firm, add the whipped cream, drizzle on the melted chocolate, and
+                            add
+                            any
+                            other toppings</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Double -->
+        <div class="recipesContainer2" id="bigCupcake">
+            <h4>Makes 24 Cupcakes</h4>
+            <p class="centerText">
+                Prep Time: 5 minutes<br />
+                Total Time: 2 hours 30 minutes<br />
+                Difficulty: Easy<br />
+                Servings: 24 cupcakes<br />
+            </p>
+            <div id="ingredientsDiv">
+                <button type="button" class="btn btn-outline-success" id="cupcakeIngredientsDouble">Ingredients</button>
+            </div>
+            <div id="bigIngredientsCupcake">
+                <p>
+                    <ul>
+                        <li>1 box chocolate cake mix (plus ingredients to make it)</li>
+                        <li>12 cups (or 3 qts.) ice cream (choose your favorite kind!)</li>
+                        <li>4 cups whipped cream</li>
+                        <li>2 cups melted semisweet chocolate chips</li>
+                        <li>1 cup of any topping you would like</li>
+                    </ul>
+                </p>
+            </div>
+            <br />
+            <div id="directionsDiv">
+                <button type="button" class="btn btn-outline-success" id="cupcakeDirectionsDouble">Directions</button>
+            </div>
+            <div id="bigDirectionsCupcake">
+                <p>
+                    <ol>
+                        <li>Preheat the oven to 350 degrees F and line a muffin tin with cupcake liners. Prepare
+                            the
+                            cupcake batter according to the directions on the box and put batter in the liners</li>
+                        <li>Bake about 20 minutes or until a toothpick comes out clean, allow the cupcakes to cool
+                            before
+                            putting in ice cream</li>
+                        <li>Use a melon baller (or a spoon) and scoop out the middles of each cupcake (you are
+                            going to
+                            create a well in the cupcake). Trim the bottoms of the tops so they are flat, then set
+                            them
+                            aside</li>
+                        <li>Fill the cupcakes with ice cream and cover with the tops, place in the freezer for
+                            about 1
+                            1/2
+                            - 2 hours</li>
+                        <li>When the cupcakes are firm, add the whipped cream, drizzle on the melted chocolate, and
+                            add
+                            any
+                            other toppings</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End Ice Cream Cupcakes -->
+
+
+
+    <!-- Giant Molten Cake for Cake Button -->
+    <div class="recipesContainer" id="giantMoltenCake">
+        <h2>Giant Molten Chocolate Cake</h2>
+        <img src="images/giantMoltenCake.jpg" alt="Giant Molten Chocolate Cake" class="mx-auto d-block">
+        <br />
+        <div class="containerButton2">
+            <button type="button" class="btn btn-outline-light" id="4Cakes">4 Servings</button>
+            <button type="button" class="btn btn-outline-light" id="8Cakes">8 Servings</button>
+            <button type="button" class="btn btn-outline-light" id="16Cakes">16 Servings</button>
+        </div>
+        <br />
+
+
+        <!-- Half -->
+        <div class="recipesContainer2" id="smallCakes">
+            <h4>Makes 4 Servings</h4>
+            <p class="centerText">
+                Prep Time: 5 minutes<br />
+                Total Time: 1 hour<br />
+                Difficulty: Easy<br />
+                Servings: 4<br />
+            </p>
+            <div id="ingredientsDiv">
+                <button type="button" class="btn btn-outline-success" id="cakeIngredientsSmall">Ingredients</button>
+            </div>
+            <div id="smallIngredientsCake">
+                <p>
+                    <ul>
+                        <li>1 box chocolate cake mix (plus ingredients to make it)</li>
+                        <li>1 cup heavy cream</li>
+                        <li>8 oz dark chocolate</li>
+                        <li>Cocoa powder (for dusting)</li>
+                    </ul>
+                </p>
+            </div>
+            <br />
+            <div id="directionsDiv">
+                <button type="button" class="btn btn-outline-success" id="cakeDirectionsSmall">Directions</button>
+            </div>
+            <div id="smallDirectionsCake">
+                <p>
+                    <ol>
+                        <li>Preheat oven to 350 degrees F</li>
+                        <li>In a large bowl, prepare the cake mix according to the package instructions</li>
+                        <li>Pour the batter into a well-greased small (7 1/2 by 3 inches) bundt pan (You can freeze
+                            the
+                            leftover batter for
+                            up
+                            to a
+                            month)</li>
+                        <li>Bake for 18-20 minutes or until a toothpick comes out clean</li>
+                        <li>Heat the heavy cream in a small saucepan until it is just boiling</li>
+                        <li>Put the chocolate in a Advanced bowl and carefully pour the hot cream over the
+                            chocolate.
+                            Mix
+                            until the chocolate is completely melted and smooth</li>
+                        <li>Flip the bundt cake over onto a serving plate</li>
+                        <li>Pour all the chocolate ganache into the hole in the middle, filling it up and spilling
+                            over
+                            the sides (ganache should cover the cake)</li>
+                        <li>Dust the cocoa powder over the cake and allow it to sit about 30 minutes before you
+                            serve
+                            it</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Normal -->
+        <div class="recipesContainer2" id="normalCakes">
+            <h4>Makes 8 Servings</h4>
+            <p class="centerText">
+                Prep Time: 5 minutes<br />
+                Total Time: 1 hour 40 minutes<br />
+                Difficulty: Easy<br />
+                Servings: 8<br />
+            </p>
+            <div id="ingredientsDiv">
+                <button type="button" class="btn btn-outline-success" id="cakeIngredientsNormal">Ingredients</button>
+            </div>
+            <div id="normalIngredientsCake">
+                <p>
+                    <ul>
+                        <li>1 box chocolate cake mix (plus ingredients to make it)</li>
+                        <li>2 cups heavy cream</li>
+                        <li>16 oz dark chocolate</li>
+                        <li>Cocoa powder (for dusting)</li>
+                    </ul>
+                </p>
+            </div>
+            <br />
+            <div id="directionsDiv">
+                <button type="button" class="btn btn-outline-success" id="cakeDirectionsNormal">Directions</button>
+            </div>
+            <div id="normalDirectionsCake">
+                <p>
+                    <ol>
+                        <li>Preheat oven to 350 degrees F</li>
+                        <li>In a large bowl, prepare the cake mix according to the package instructions</li>
+                        <li>Pour the batter into a well-greased bundt pan (9 by 3 inches)</li>
+                        <li>Bake for 35-45 minutes or until a toothpick comes out clean</li>
+                        <li>Heat the heavy cream in a small saucepan until it is just boiling</li>
+                        <li>Put the chocolate in a Advanced bowl and carefully pour the hot cream over the
+                            chocolate.
+                            Mix
+                            until the chocolate is completely melted and smooth</li>
+                        <li>Flip the bundt cake over onto a serving plate</li>
+                        <li>Pour all the chocolate ganache into the hole in the middle, filling it up and spilling
+                            over
+                            the sides (ganache should cover the cake)</li>
+                        <li>Dust the cocoa powder over the cake and allow it to sit about 30 minutes before you
+                            serve
+                            it</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Double -->
+        <div class="recipesContainer2" id="bigCakes">
+            <h4>Makes 16 Servings</h4>
+            <p class="centerText">
+                Prep Time: 5 minutes<br />
+                Total Time: 2 hour 15 minutes<br />
+                Difficulty: Easy<br />
+                Servings: 16<br />
+            </p>
+            <div id="ingredientsDiv">
+                <button type="button" class="btn btn-outline-success" id="cakeIngredientsBig">Ingredients</button>
+            </div>
+            <div id="bigIngredientsCake">
+                <p>
+                    <ul>
+                        <li>2 boxes chocolate cake mix (plus ingredients to make it)</li>
+                        <li>4 cups heavy cream</li>
+                        <li>32 oz dark chocolate</li>
+                        <li>Cocoa powder (for dusting)</li>
+                    </ul>
+                </p>
+            </div>
+            <br />
+            <div id="directionsDiv">
+                <button type="button" class="btn btn-outline-success" id="cakeDirectionsBig">Directions</button>
+            </div>
+            <div id="bigDirectionsCake">
+                <p>
+                    <ol>
+                        <li>Preheat oven to 350 degrees F</li>
+                        <li>In a large bowl, prepare the cake mix according to the package instructions</li>
+                        <li>Pour the batter into a well-greased big (10 by 3 1/2 inches) bundt pan (if there is any
+                            leftover batter, you can freeze it for up to a month)</li>
+                        <li>Bake for 60-90 minutes or until a toothpick comes out clean</li>
+                        <li>Heat the heavy cream in a small saucepan until it is just boiling</li>
+                        <li>Put the chocolate in a Advanced bowl and carefully pour the hot cream over the
+                            chocolate.
+                            Mix
+                            until the chocolate is completely melted and smooth</li>
+                        <li>Flip the bundt cake over onto a serving plate</li>
+                        <li>Pour all the chocolate ganache into the hole in the middle, filling it up and spilling
+                            over
+                            the sides (ganache should cover the cake)</li>
+                        <li>Dust the cocoa powder over the cake and allow it to sit about 30 minutes before you
+                            serve
+                            it</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End Giant Molten Cake -->
+
+
+
+
+    <!-- Mixed Berry Pie for Pie Button -->
+    <div class="recipesContainer" id="mixedBerryPie">
+        <h2>Mixed Berry Pie</h2>
+        <img src="images/mixedBerryPie.jpg" alt="Mixed Berry Pie" class="mx-auto d-block">
+        <br />
+        <div class="containerButton2">
+            <button type="button" class="btn btn-outline-light" id="4Pie">4 Servings</button>
+            <button type="button" class="btn btn-outline-light" id="8Pie">8 Servings</button>
+            <button type="button" class="btn btn-outline-light" id="16Pie">16 Servings</button>
+        </div>
+        <br />
+
+
+        <!--Half-->
+        <div class="recipesContainer2" id="smallPie">
+            <h4>Makes 4 Servings</h4>
+            <p class="centerText">
+                Prep Time: 25 minutes<br />
+                Total Time: 1 hours 50 minutes<br />
+                Difficulty: Advanced<br />
+                Servings: 4<br />
+            </p>
+            <div id="ingredientsDiv">
+                <button type="button" class="btn btn-outline-success" id="pieIngredientsSmall">Ingredients</button>
+            </div>
+            <div id="smallIngredientsPie">
+                <p>
+                    <ul>
+                        <li>1 1/4 cups all-purpose flour</li>
+                        <li>1/8 teaspoon salt</li>
+                        <li>1/2 cup cold, cubed butter</li>
+                        <li>3 to 4 tablespoons ice water</li><br />
+                        <p><strong>Filling:</strong></p>
+                        <li>1/2 cup sugar</li>
+                        <li>1/8 cup cornstarch</li>
+                        <li>Dash of salt</li>
+                        <li>2 tablespoons and 2 teaspoons water</li>
+                        <li>1/4 teaspoon ground cinnamon (optional)</li>
+                        <li>1/2 cup fresh blueberries</li>
+                        <li>1/2 cup fresh raspberries</li>
+                        <li>1/2 cup halved fresh strawberries</li>
+                        <li>3 tablespoons fresh blackberries</li>
+                        <li>1/2 tablespoon lemon juice</li>
+                        <li>1 tablespoon butter</li>
+                    </ul>
+                </p>
+            </div>
+            <br />
+            <div id="directionsDiv">
+                <button type="button" class="btn btn-outline-success" id="pieDirectionsSmall">Directions</button>
+            </div>
+            <div id="smallDirectionsPie">
+                <p>
+                    <ol>
+                        <li>In a large bowl, mix flour and salt; cut in butter until crumbly. Gradually add in the
+                            ice water, tossing with a fork until the dough holds together when pressed. Divide in
+                            two (one should be slightly bigger than the other). Shape each section into a disk;
+                            wrap both in plastic. Refrigerate for 30 minutes or overnight</li>
+                        <li>For the filling, in a large saucepan, whisk sugar, cornstarch, salt, water and cinnamon
+                            (if you want cinnamon) until smooth; add in blueberries. Bring to a boil; cooke and
+                            stir for 2 minutes or until thickened. Cool slightly</li>
+                        <li>Preheat oven to 400 degrees F. gently fold raspberries, strawberries, blackberries and
+                            lemon juice into blueberry mixture. Lightly flour the counter, roll out the larger
+                            portion of dough to a 1/8-inch thick circle; transfer to a 5-inch pie plate. Trim
+                            pastry to 1/2-inch beyond rim of plate. Add the filling and dot with butter</li>
+                        <li>Roll the remaining dough to a 1/8-inch thick circle; cut into 1/2-inch wide strips.
+                            Arrange over filling in a lattice pattern. Trim and seal strips to edge of the bottom
+                            of the pastry; flute the edge. Bake for about 12 minutes</li>
+                        <li>Reduce oven setting to 350 degrees F, bake about 20-25 minutes or until the crust is
+                            golden brown and the filling is bubbly. Cool on a wire rack. Serve and enjoy</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Normal -->
+        <div class="recipesContainer2" id="normalPie">
+            <h4>Makes 8 Servings</h4>
+            <p class="centerText">
+                Prep Time: 30 minutes<br />
+                Total Time: 2 hours 30 minutes<br />
+                Difficulty: Advanced<br />
+                Servings: 8<br />
+            </p>
+            <div id="ingredientsDiv">
+                <button type="button" class="btn btn-outline-success" id="pieIngredientsNormal">Ingredients</button>
+            </div>
+            <div id="normalIngredientsPie">
+                <p>
+                    <ul>
+                        <li>2 1/2 cups all-purpose flour</li>
+                        <li>1/4 teaspoon salt</li>
+                        <li>1 cup cold, cubed butter</li>
+                        <li>6 to 8 tablespoons ice water</li><br />
+                        <p><strong>Filling:</strong></p>
+                        <li>1 cup sugar</li>
+                        <li>1/4 cup cornstarch</li>
+                        <li>Dash of salt</li>
+                        <li>1/3 cup water</li>
+                        <li>1/2 teaspoon ground cinnamon (optional)</li>
+                        <li>1 cup fresh blueberries</li>
+                        <li>1 cup fresh raspberries</li>
+                        <li>1 cup halved fresh strawberries</li>
+                        <li>3/4 cups fresh blackberries</li>
+                        <li>1 tablespoon lemon juice</li>
+                        <li>2 tablespoons butter</li>
+                    </ul>
+                </p>
+            </div>
+            <br />
+            <div id="directionsDiv">
+                <button type="button" class="btn btn-outline-success" id="pieDirectionsNormal">Directions</button>
+            </div>
+            <div id="normalDirectionsPie">
+                <p>
+                    <ol>
+                        <li>In a large bowl, mix flour and salt; cut in butter until crumbly. Gradually add in the
+                            ice water, tossing with a fork until the dough holds together when pressed. Divide in
+                            two (one should be slightly bigger than the other). Shape each section into a disk;
+                            wrap both in plastic. Refrigerate for 1 hour or overnight</li>
+                        <li>For the filling, in a large saucepan, whisk sugar, cornstarch, salt, water and cinnamon
+                            (if you want cinnamon) until smooth; add in blueberries. Bring to a boil; cooke and
+                            stir for 2 minutes or until thickened. Cool slightly</li>
+                        <li>Preheat oven to 400 degrees F. gently fold raspberries, strawberries, blackberries and
+                            lemon juice into blueberry mixture. Lightly flour the counter, roll out the larger
+                            portion of dough to a 1/8-inch thick circle; transfer to a 9-inch pie plate. Trim
+                            pastry to 1/2-inch beyond rim of plate. Add the filling and dot with butter</li>
+                        <li>Roll the remaining dough to a 1/8-inch thick circle; cut into 1/2-inch wide strips.
+                            Arrange over filling in a lattice pattern. Trim and seal strips to edge of the bottom
+                            of the pastry; flute the edge. Bake for about 10 minutes</li>
+                        <li>Reduce oven setting to 350 degrees F, bake about 45-50 minutes or until the crust is
+                            golden brown and the filling is bubbly. Cool on a wire rack. Serve and enjoy</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+
+
+        <!--Double-->
+        <div class="recipesContainer2" id="bigPie">
+            <h4>Makes 16 Servings</h4>
+            <p class="centerText">
+                Prep Time: 30 minutes<br />
+                Total Time: 2 hours 20 minutes<br />
+                Difficulty: Advanced<br />
+                Servings: 16<br />
+            </p>
+            <div id="ingredientsDiv">
+                <button type="button" class="btn btn-outline-success" id="pieIngredientsBig">Ingredients</button>
+            </div>
+            <div id="bigIngredientsPie">
+                <p>
+                    <ul>
+                        <li>5 cups all-purpose flour</li>
+                        <li>1/2 teaspoon salt</li>
+                        <li>2 cups cold, cubed butter</li>
+                        <li>12 to 16 tablespoons ice water</li><br />
+                        <p><strong>Filling:</strong></p>
+                        <li>2 cups sugar</li>
+                        <li>1/2 cup cornstarch</li>
+                        <li>1/8 teaspoon of salt</li>
+                        <li>2/3 cups water</li>
+                        <li>1 teaspoon ground cinnamon (optional)</li>
+                        <li>2 cups fresh blueberries</li>
+                        <li>2 cups fresh raspberries</li>
+                        <li>2 cups halved fresh strawberries</li>
+                        <li>1 1/2 cups fresh blackberries</li>
+                        <li>2 tablespoons lemon juice</li>
+                        <li>1/4 cup butter</li>
+                    </ul>
+                </p>
+            </div>
+            <br />
+            <div id="directionsDiv">
+                <button type="button" class="btn btn-outline-success" id="pieDirectionsBig">Directions</button>
+            </div>
+            <div id="bigDirectionsPie">
+                <p>
+                    <ol>
+                        <li>In a large bowl, mix flour and salt; cut in butter until crumbly. Gradually add in the
+                            ice water, tossing with a fork until the dough holds together when pressed. Divide in
+                            two (one should be slightly bigger than the other). Shape each section into a disk;
+                            wrap both in plastic. Refrigerate for about 1 hour or overnight</li>
+                        <li>For the filling, in a large saucepan, whisk sugar, cornstarch, salt, water and cinnamon
+                            (if you want cinnamon) until smooth; add in blueberries. Bring to a boil; cooke and
+                            stir for 2 minutes or until thickened. Cool slightly</li>
+                        <li>Preheat oven to 400 degrees F. gently fold raspberries, strawberries, blackberries and
+                            lemon juice into blueberry mixture. Lightly flour the counter, roll out the larger
+                            portion of dough to a 1/8-inch thick circle; transfer to a 12-inch pie plate. Trim
+                            pastry to 1/2-inch beyond rim of plate. Add the filling and dot with butter</li>
+                        <li>Roll the remaining dough to a 1/8-inch thick circle; cut into 1/2-inch wide strips.
+                            Arrange over filling in a lattice pattern. Trim and seal strips to edge of the bottom
+                            of the pastry; flute the edge. Bake for about 20 minutes</li>
+                        <li>Reduce oven setting to 350 degrees F, bake about 25-30 minutes or until the crust is
+                            golden brown and the filling is bubbly. Cool on a wire rack. Serve and enjoy</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--End Mixed Berry Pie-->
+
+
+
+
+    <!--Soft Frosted Sugar Cookie for Cookie Button-->
+    <div class="recipesContainer" id="frostedSugarCookie">
+        <h2>Soft Frosted Sugar Cookie</h2>
+        <img src="images/frostedSugarCookie.jpg" alt="Soft Frosted Sugar Cookie" class="mx-auto d-block">
+        <br />
+        <div class="containerButton2">
+            <button type="button" class="btn btn-outline-light" id="18Cookie">18 Cookies</button>
+            <button type="button" class="btn btn-outline-light" id="36Cookie">36 Cookies</button>
+            <button type="button" class="btn btn-outline-light" id="72Cookie">72 Cookies</button>
+        </div>
+        <br />
+
+
+        <!--Half-->
+        <div class="recipesContainer2" id="smallCookie">
+            <h2>Makes 18 Cookies</h2>
+            <p class="centertext">
+                Prep Time: 20 minutes<br />
+                Total Time: 1 hour 20 minutes<br />
+                Difficulty: Easy<br />
+                Servings: 18 Cookies<br />
+            </p>
+            <div id="ingredientsDiv">
+                <button type="button" class="btn btn-outline-success" id="cookieIngredientsSmall">Ingredients</button>
+            </div>
+            <div id="smallIngredientsCookie">
+                <p>
+                    <ul>
+                        <li>1/2 cup vegetable shortening</li>
+                        <li>1/2 cup white sugar</li>
+                        <li>1/8 cup milk</li>
+                        <li>1 egg</li>
+                        <li>1/2 teaspoon vanilla extract</li>
+                        <li>1 1/2 cups all-purpose flour</li>
+                        <li>1/2 teaspoon salt</li>
+                        <li>1/2 teaspoon baking soda</li><br />
+                        <p><strong>Frosting:</strong></p>
+                        <li>1/8 cup butter</li>
+                        <li>1 1/2 cups confectioners sugar</li>
+                        <li>3/4 teaspoons vanilla extract (or more to taste)</li>
+                        <li>1 tablespoon milk (or as needed)</li>
+                        <li>Food coloring (optional)</li>
+                        <li>Toppings (optional)</li>
+                    </ul>
+                </p>
+            </div>
+            <br />
+            <div id="directionsDiv">
+                <button type="button" class="btn btn-outline-success" id="cookieDirectionsSmall">Directions</button>
+            </div>
+            <div id="smallDirectionsCookie">
+                <p>
+                    <ol>
+                        <li>Preheat oven to 350 degrees F</li>
+                        <li>Beat vegetable shortening, white sugar, 1/8 cup milk, eggs, and 1/2 teaspoon of vanilla
+                            extract together in a bowl. Whisk flour, salt and baking soda in a separate bowl.
+                            Slowly beat flour mixture into shortening mixture to make a smooth dough</li>
+                        <li>Roll dough out 1/4-inch thick on a floured work surface and cut into shapes. Arrange
+                            the cookies on baking sheets</li>
+                        <li>Bake in the preheated oven for about 20 minutes or until cookies are firm. Let cool on
+                            a wire rack</li>
+                        <li>Beat butter, confectioners sugar, 3/4 teaspoon vanilla extract and 1 tablespoon milk
+                            in a bowl with an electric mixer on high until frosting is spreadable and slightly
+                            fluffy. Add in food coloring and frost the cooled cookies. Add on toppings when you are
+                            done frosting</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+
+
+        <!--Normal-->
+        <div class="recipesContainer2" id="normalCookie">
+            <h2>Makes 36 Cookies</h2>
+            <p class="centertext">
+                Prep Time: 20 minutes<br />
+                Total Time: 1 hour<br />
+                Difficulty: Easy<br />
+                Servings: 36 Cookies<br />
+            </p>
+            <div id="ingredientsDiv">
+                <button type="button" class="btn btn-outline-success" id="cookieIngredientsNormal">Ingredients</button>
+            </div>
+            <div id="normalIngredientsCookie">
+                <p>
+                    <ul>
+                        <li>1 cup vegetable shortening</li>
+                        <li>1 cup white sugar</li>
+                        <li>1/4 cup milk</li>
+                        <li>2 eggs</li>
+                        <li>1 teaspoon vanilla extract</li>
+                        <li>3 cups all-purpose flour</li>
+                        <li>1 teaspoon salt</li>
+                        <li>1 teaspoon baking soda</li><br />
+                        <p><strong>Frosting:</strong></p>
+                        <li>1/4 cup butter</li>
+                        <li>3 cups confectioners sugar</li>
+                        <li>1 1/2 teaspoons vanilla extract (or more to taste)</li>
+                        <li>2 tablespoons milk (or as needed)</li>
+                        <li>Food coloring (optional)</li>
+                        <li>Toppings (optional)</li>
+                    </ul>
+                </p>
+            </div>
+            <br />
+            <div id="directionsDiv">
+                <button type="button" class="btn btn-outline-success" id="cookieDirectionsNormal">Directions</button>
+            </div>
+            <div id="normalDirectionsCookie">
+                <p>
+                    <ol>
+                        <li>Preheat oven to 350 degrees F</li>
+                        <li>Beat vegetable shortening, white sugar, 1/4 cup milk, eggs, and 1 teaspoon of vanilla
+                            extract together in a bowl. Whisk flour, salt and baking soda in a separate bowl.
+                            Slowly beat flour mixture into shortening mixture to make a smooth dough</li>
+                        <li>Roll dough out 1/4-inch thick on a floured work surface and cut into shapes. Arrange
+                            the cookies on baking sheets</li>
+                        <li>Bake in the preheated oven for about 10 minutes or until cookies are firm. Let cool on
+                            a wire rack</li>
+                        <li>Beat butter, confectioners sugar, 1 1/2 teaspoon vanilla extract and 2 tablespoons milk
+                            in a bowl with an electric mixer on high until frosting is spreadable and slightly
+                            fluffy. Add in food coloring and frost the cooled cookies. Add on toppings when you are
+                            done frosting</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+
+
+        <!--Double-->
+        <div class="recipesContainer2" id="bigCookie">
+            <h2>Makes 72 Cookies</h2>
+            <p class="centertext">
+                Prep Time: 20 minutes<br />
+                Total Time: 1 hour 10 minutes<br />
+                Difficulty: Easy<br />
+                Servings: 72 Cookies<br />
+            </p>
+            <div id="ingredientsDiv">
+                <button type="button" class="btn btn-outline-success" id="cookieIngredientsBig">Ingredients</button>
+            </div>
+            <div id="bigIngredientsCookie">
+                <p>
+                    <ul>
+                        <li>2 cups vegetable shortening</li>
+                        <li>2 cups white sugar</li>
+                        <li>1/2 cup milk</li>
+                        <li>4 eggs</li>
+                        <li>2 teaspoons vanilla extract</li>
+                        <li>6 cups all-purpose flour</li>
+                        <li>2 teaspoons salt</li>
+                        <li>2 teaspoons baking soda</li><br />
+                        <p><strong>Frosting:</strong></p>
+                        <li>1/2 cup butter</li>
+                        <li>6 cups confectioners sugar</li>
+                        <li>1 tablespoon vanilla extract (or more to taste)</li>
+                        <li>4 tablespoons milk (or as needed)</li>
+                        <li>Food coloring (optional)</li>
+                        <li>Toppings (optional)</li>
+                    </ul>
+                </p>
+            </div>
+            <br />
+            <div id="directionsDiv">
+                <button type="button" class="btn btn-outline-success" id="cookieDirectionsBig">Directions</button>
+            </div>
+            <div id="bigDirectionsCookie">
+                <p>
+                    <ol>
+                        <li>Preheat oven to 350 degrees F</li>
+                        <li>Beat vegetable shortening, white sugar, 1/2 cup milk, eggs, and 2 teaspoons of vanilla
+                            extract together in a bowl. Whisk flour, salt and baking soda in a separate bowl.
+                            Slowly beat flour mixture into shortening mixture to make a smooth dough</li>
+                        <li>Roll dough out 1/4-inch thick on a floured work surface and cut into shapes. Arrange
+                            the cookies on baking sheets</li>
+                        <li>Bake in the preheated oven for about 8-10 minutes or until cookies are firm. Let cool
+                            on
+                            a wire rack</li>
+                        <li>Beat butter, confectioners sugar, 1 tablespoon vanilla extract and 4 tablespoons milk
+                            in a bowl with an electric mixer on high until frosting is spreadable and slightly
+                            fluffy. Add in food coloring and frost the cooled cookies. Add on toppings when you are
+                            done frosting</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--End Soft Frosted Sugar Cookie-->
+
+
+
+
+    <!--Cannoli for Pastry Button-->
+    <div class="recipesContainer" id="cannoliPastry">
+        <h2>Cannolis</h2>
+        <img src="images/cannolis.jpg" alt="Cannoli" class="mx-auto d-block">
+        <br />
+        <div class="containerButton2">
+            <button type="button" class="btn btn-outline-light" id="15Cannoli">15 Cannolis</button>
+            <button type="button" class="btn btn-outline-light" id="30Cannoli">30 Cannolis</button>
+            <button type="button" class="btn btn-outline-light" id="60Cannoli">60 Cannolis</button>
+        </div>
+        <br />
+
+
+        <!--Half-->
+        <div class="recipesContainer2" id="smallPastry">
+            <h2>Makes 15 Cannolis</h2>
+            <p class="centertext">
+                Prep Time: 45 minutes<br />
+                Total Time: 3 hours 45 minutes<br />
+                Difficulty: Advanced<br />
+                Servings: 15 Cannolis<br />
+            </p>
+            <div id="ingredientsDiv">
+                <button type="button" class="btn btn-outline-success" id="pastryIngredientsSmall">Ingredients</button>
+            </div>
+            <div id="smallIngredientsPastry">
+                <p>
+                    <ul>
+                        <p><strong>Shells:</strong></p>
+                        <li>1 1/2 cups all-purpose flour</li>
+                        <li>1/8 cup white sugar</li>
+                        <li>1/8 teaspoon ground cinnamon</li>
+                        <li>1 1/2 tablespoons shortening</li>
+                        <li>1/2 egg</li>
+                        <li>1/2 egg yolk</li>
+                        <li>1/2 tablespoon distilled white vinegar</li>
+                        <li>1 tablespoon water</li>
+                        <li>1/2 egg white</li>
+                        <li>1 pint oil (for frying or as needed)</li><br />
+                        <p><strong>Filling:</strong></p>
+                        <li>1/2 container ricotta cheese (16 ounces)</li>
+                        <li>1/4 cup confectioners sugar</li>
+                        <li>1/2 teaspoon lemon zest (or to taste)</li>
+                        <li>2 ounces semisweet chocolate</li>
+                    </ul>
+                </p>
+            </div>
+            <br />
+            <div id="directionsDiv">
+                <button type="button" class="btn btn-outline-success" id="pastryDirectionsSmall">Directions</button>
+            </div>
+            <div id="smallDirectionsPastry">
+                <p>
+                    <ol>
+                        <li>In a medium bowl, mix together the flour, sugar and cinnamon. Cut in the shortening
+                            until it is in pieces on larger than peas. Make a well in the center, and pour in the
+                            egg, egg yolk, vinegar and water. Mix with a fork until the dough becomes stiff, then
+                            finish by hand, kneading on a clean surface. Add more water if needed to incorporate
+                            all the dry ingredients. Knead for about 10 minutes, then cover and refrigerate for 1-2
+                            hours</li>
+                        <li>Divide the dough into thirds, flatten each one just enough to get through a pasta
+                            machine. Roll the dough through successively thinner settings until you reach the
+                            thinnest setting. Dust lightly with flour if necessary. Place the sheet of dough on a
+                            lightly floured surface. Using a large glass or bowl, cut out 4 to 5 inch circles. Dust
+                            the circles with a light coating of flour. This will help removing the shells from the
+                            tubes later on. Roll dough around cannoli tubes, sealing the edge with a bit of egg
+                            white</li>
+                        <li>Heat the oil to 375 degrees F in a deep-fryer (or a deep heavy skillet). Fry shells on
+                            the tubes a few at a time for about 2 to 3 minutes, or until golden. Use tongs to turn
+                            as needed. Carefully remove using tongs and place on a cooling rack set over paper
+                            towels. Cool just long enough that you can handle the tubes, carefully twist the tube
+                            to remove the shells. Using a towel can help you get a better grip. Wash/wipe off the
+                            tubes and use them for more shells. Cooled shells can be placed in an airtight
+                            container and kept for up to 2 months. Fill the shells up to 1 hour before serving them</li>
+                        <li>To make the filling, stir together the ricotta cheese and confectioners sugar using a
+                            spoon. Fold in lemon zest and chocolate. Use a pastry bag to pipe into the shells,
+                            filling them from the center to one end, then doing the same from the other end. Dust
+                            with additional confectioners sugar and grated chocolate for garnish before serving</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+
+
+        <!--Normal-->
+        <div class="recipesContainer2" id="normalPastry">
+            <h2>Makes 30 Cannolis</h2>
+            <p class="centertext">
+                Prep Time: 45 minutes<br />
+                Total Time: 3 hours 45 minutes<br />
+                Difficulty: Advanced<br />
+                Servings: 30 Cannolis<br />
+            </p>
+            <div id="ingredientsDiv">
+                <button type="button" class="btn btn-outline-success" id="pastryIngredientsNormal">Ingredients</button>
+            </div>
+            <div id="normalIngredientsPastry">
+                <p>
+                    <ul>
+                        <p><strong>Shells:</strong></p>
+                        <li>3 cups all-purpose flour</li>
+                        <li>1/4 cup white sugar</li>
+                        <li>1/4 teaspoon ground cinnamon</li>
+                        <li>3 tablespoons shortening</li>
+                        <li>1 egg</li>
+                        <li>1 egg yolk</li>
+                        <li>1 tablespoon distilled white vinegar</li>
+                        <li>2 tablespoons water</li>
+                        <li>1 egg white</li>
+                        <li>1 quart oil (for frying or as needed)</li><br />
+                        <p><strong>Filling:</strong></p>
+                        <li>1 container ricotta cheese (32 ounces)</li>
+                        <li>1/2 cup confectioners sugar</li>
+                        <li>1 teaspoon lemon zest (or to taste)</li>
+                        <li>4 ounces semisweet chocolate</li>
+                    </ul>
+                </p>
+            </div>
+            <br />
+            <div id="directionsDiv">
+                <button type="button" class="btn btn-outline-success" id="pastryDirectionsNormal">Directions</button>
+            </div>
+            <div id="normalDirectionsPastry">
+                <p>
+                    <ol>
+                        <li>In a medium bowl, mix together the flour, sugar and cinnamon. Cut in the shortening
+                            until it is in pieces on larger than peas. Make a well in the center, and pour in the
+                            egg, egg yolk, vinegar and water. Mix with a fork until the dough becomes stiff, then
+                            finish by hand, kneading on a clean surface. Add more water if needed to incorporate
+                            all the dry ingredients. Knead for about 10 minutes, then cover and refrigerate for 1-2
+                            hours</li>
+                        <li>Divide the dough into thirds, flatten each one just enough to get through a pasta
+                            machine. Roll the dough through successively thinner settings until you reach the
+                            thinnest setting. Dust lightly with flour if necessary. Place the sheet of dough on a
+                            lightly floured surface. Using a large glass or bowl, cut out 4 to 5 inch circles. Dust
+                            the circles with a light coating of flour. This will help removing the shells from the
+                            tubes later on. Roll dough around cannoli tubes, sealing the edge with a bit of egg
+                            white</li>
+                        <li>Heat the oil to 375 degrees F in a deep-fryer (or a deep heavy skillet). Fry shells on
+                            the tubes a few at a time for about 2 to 3 minutes, or until golden. Use tongs to turn
+                            as needed. Carefully remove using tongs and place on a cooling rack set over paper
+                            towels. Cool just long enough that you can handle the tubes, carefully twist the tube
+                            to remove the shells. Using a towel can help you get a better grip. Wash/wipe off the
+                            tubes and use them for more shells. Cooled shells can be placed in an airtight
+                            container and kept for up to 2 months. Fill the shells up to 1 hour before serving them</li>
+                        <li>To make the filling, stir together the ricotta cheese and confectioners sugar using a
+                            spoon. Fold in lemon zest and chocolate. Use a pastry bag to pipe into the shells,
+                            filling them from the center to one end, then doing the same from the other end. Dust
+                            with additional confectioners sugar and grated chocolate for garnish before serving</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+
+
+        <!--Double-->
+        <div class="recipesContainer2" id="bigPastry">
+            <h2>Makes 60 Cannolis</h2>
+            <p class="centertext">
+                Prep Time: 45 minutes<br />
+                Total Time: 3 hours 45 minutes<br />
+                Difficulty: Advanced<br />
+                Servings: 60 Cannolis<br />
+            </p>
+            <div id="ingredientsDiv">
+                <button type="button" class="btn btn-outline-success" id="pastryIngredientsBig">Ingredients</button>
+            </div>
+            <div id="bigIngredientsPastry">
+                <p>
+                    <ul>
+                        <p><strong>Shells:</strong></p>
+                        <li>6 cups all-purpose flour</li>
+                        <li>1/2 cup white sugar</li>
+                        <li>1/2 teaspoon ground cinnamon</li>
+                        <li>6 tablespoons (3/8 cups) shortening</li>
+                        <li>2 eggs</li>
+                        <li>2 egg yolks</li>
+                        <li>2 tablespoons distilled white vinegar</li>
+                        <li>4 tablespoons water</li>
+                        <li>2 egg whites</li>
+                        <li>2 quarts oil (for frying or as needed)</li><br />
+                        <p><strong>Filling:</strong></p>
+                        <li>2 containers ricotta cheese (64 ounces)</li>
+                        <li>1 cup confectioners sugar</li>
+                        <li>2 teaspoons lemon zest (or to taste)</li>
+                        <li>8 ounces semisweet chocolate</li>
+                    </ul>
+                </p>
+            </div>
+            <br />
+            <div id="directionsDiv">
+                <button type="button" class="btn btn-outline-success" id="pastryDirectionsBig">Directions</button>
+            </div>
+            <div id="bigDirectionsPastry">
+                <p>
+                    <ol>
+                        <li>In a medium bowl, mix together the flour, sugar and cinnamon. Cut in the shortening
+                            until it is in pieces on larger than peas. Make a well in the center, and pour in the
+                            egg, egg yolk, vinegar and water. Mix with a fork until the dough becomes stiff, then
+                            finish by hand, kneading on a clean surface. Add more water if needed to incorporate
+                            all the dry ingredients. Knead for about 10 minutes, then cover and refrigerate for 1-2
+                            hours</li>
+                        <li>Divide the dough into thirds, flatten each one just enough to get through a pasta
+                            machine. Roll the dough through successively thinner settings until you reach the
+                            thinnest setting. Dust lightly with flour if necessary. Place the sheet of dough on a
+                            lightly floured surface. Using a large glass or bowl, cut out 4 to 5 inch circles. Dust
+                            the circles with a light coating of flour. This will help removing the shells from the
+                            tubes later on. Roll dough around cannoli tubes, sealing the edge with a bit of egg
+                            white</li>
+                        <li>Heat the oil to 375 degrees F in a deep-fryer (or a deep heavy skillet). Fry shells on
+                            the tubes a few at a time for about 2 to 3 minutes, or until golden. Use tongs to turn
+                            as needed. Carefully remove using tongs and place on a cooling rack set over paper
+                            towels. Cool just long enough that you can handle the tubes, carefully twist the tube
+                            to remove the shells. Using a towel can help you get a better grip. Wash/wipe off the
+                            tubes and use them for more shells. Cooled shells can be placed in an airtight
+                            container and kept for up to 2 months. Fill the shells up to 1 hour before serving them</li>
+                        <li>To make the filling, stir together the ricotta cheese and confectioners sugar using a
+                            spoon. Fold in lemon zest and chocolate. Use a pastry bag to pipe into the shells,
+                            filling them from the center to one end, then doing the same from the other end. Dust
+                            with additional confectioners sugar and grated chocolate for garnish before serving</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--end cannoli-->
+
+
+
+
+    <br />
+    <!-- Oreo Balls -->
+    <div class="recipesContainer" id="oreoBalls">
+        <h2>Oreo Balls</h2>
+        <h5>At the end of every year we make Oreo Balls for the holidays, they become one of our most
+            anticipated
+            and most sold items</h5>
+        <div class="oreoImgContainer">
+            <img src="images/Oreo_Balls.jpg" alt="Oreo Balls">
+            <img src="images/Oreo_Balls2.jpg" alt="Oreo Balls 2">
+            <img src="images/Oreo_Balls3.jpg" alt="Oreo Balls 3">
+            <img src="images/Oreo_Balls4.jpg" alt="Oreo Balls 4">
+        </div>
+        <br />
+        <p class="centerText">
+            Prep Time: 25 minutes<br />
+            Total Time: 1 hour<br />
+            Difficulty: Easy<br />
+            Servings: 40 balls<br />
+        </p>
+        <h4>Ingredients</h4>
+        <p>
+            <ul>
+                <li>40 Oreos</li>
+                <li>8 oz cream cheese (softened)</li>
+                <li>16 oz semisweet chocolate</li>
+                <li>16 oz white chocolate</li>
+                <li>Sprinkles (or any other topping you would like)</li>
+            </ul>
+        </p>
+        <h4>Directions</h4>
+        <p>
+            <ol>
+                <li>Line a baking sheet with parchment paper</li>
+                <li>Put cookies into a blender and crush the cookies. If you don't have a blender, put cookies
+                    in a
+                    plastic bag and crush with a rolling pin. Put 1/4 of the cookies aside (if you want to use
+                    as
+                    topping for later)</li>
+                <li>In a Advanced bowl, combine the crushed oreos and softened cream cheese. Mix well (should be
+                    like
+                    a paste when you are done). Scoop out about 1 in balls, roll in your hand to smooth out,
+                    place
+                    on baking sheet. When done, place in freezer for 20 minutes</li>
+                <li>While the oreo Balls are in the freezer, grab two bowls and place the semisweet chocolate
+                    in
+                    one bowl and the white chocolate in the other. Microwave each bowl for 30 seconds, stir,
+                    then
+                    repeat until chocolate is melted and smooth</li>
+                <li>Dip each ball in the chocolate, then you can add whatever toppings you want!</li>
+            </ol>
+        </p>
+    </div>
+    <br />
+    <!-- End Oreo Balls -->
+
+    <div class="container2">
+        <a href="#top" class="btn btn-outline-dark" role="button">Go To Top</a>
+    </div>
+    <br />
+
+    <footer class="footer">
+        <div class="containerfooter">
+            <p class="text-white">Pepper's Bakery <br /> 1234 Bakery Lane <br /> 515-123-4567</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
