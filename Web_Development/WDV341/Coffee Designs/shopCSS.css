@@ -1,0 +1,98 @@
+/* Coffee Design Shop page */
+/* Card */
+.bg-colorltPink {
+  background-color: #fec0cf;
+}
+
+.bg-colordkPink {
+  background-color: #fa6690;
+}
+
+.bg-colorBrown {
+  background-color: #cc9766;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+}
+
+/* Add to Cart */
+.coffeeButton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+}
+
+.chocolateButton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 34%;
+}
+
+.cameraButton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 56%;
+}
+
+.pancakeButton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 56%;
+}
+
+.breadButton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 55.5%;
+}
+
+.eggBaconButton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 55.5%;
+}
+
+.milkCookieButton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 57%;
+}
+
+.pizzaButton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 55.5%;
+}
+
+/* Subscribe and View Cart*/
+.subscribeButton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 31%;
+}
+
+.viewCartButton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+/* Digital Good */
+.containerDigital {
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.digitalButton {
+  margin-left: auto;
+  margin-right: auto;
+  width: 29%;
+}
+
+/*# sourceMappingURL=shopCSS.css.map */
