@@ -1,0 +1,105 @@
+/* Coffee Designs CSS */
+/* Overall */
+body {
+  font-family: "Dosis", sans-serif;
+}
+
+h2 {
+  color: #fa6690;
+  text-align: center;
+}
+
+h3 {
+  color: #cc9766;
+  text-align: center;
+}
+
+h4 {
+  color: #603f20;
+  text-align: center;
+}
+
+h5 {
+  color: #fa6690;
+  text-align: center;
+}
+
+/* Header */
+.jumbotron {
+  background-color: #dfbe9f;
+  padding: 10px;
+  margin-bottom: -3px;
+}
+
+p.header {
+  color: #fa6690;
+  font-family: #cc9766;
+  text-align: center;
+  font-size: 4em;
+}
+
+p.subhead {
+  color: #603f20;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* Navbar */
+.bg-color {
+  background-color: #fec0cf;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #603f20;
+  font-size: 1.1em;
+}
+
+/* a tags */
+a {
+  color: #cc9766;
+}
+
+a:hover {
+  color: #603f20;
+  text-decoration: none;
+}
+
+/* Go to Top Button */
+.btn-color {
+  background-color: #fc9cb7;
+  color: white;
+}
+
+.topButtonContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+/*Charts*/
+.pieChart {
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+
+.barGraph {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*Footer*/
+.containerFooter {
+  background-color: #dfbe9f;
+  width: 100%;
+  padding: 0.5%;
+}
+
+.text {
+  color: #603f20;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+/*# sourceMappingURL=coffeeDesignCSS.css.map */
