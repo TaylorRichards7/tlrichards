@@ -1,0 +1,213 @@
+/* CSS for Flexbox page */
+
+$font-stack: Arial, Helvetica, sans-serif;
+$secondary-font-stack: "Arial Black", sans-serif;
+
+$primary-color: #40e0d0;
+$secondary-color: #ff7f50;
+$tertiary-color: #808080;
+
+body {
+    font-family: $font-stack; 
+}
+
+p {
+    text-align: center;
+}
+
+
+.flex-containerHeader {
+    display: flex;
+    justify-content: space-around;
+    background-color: $primary-color;
+}
+
+.flex-containerHeader > div {
+    width: 25%;
+    margin: 0 auto;
+    padding: 0.5%;
+}
+
+.headerImg{ 
+    width: 60%;
+}
+
+.header {
+    font-family: $secondary-font-stack;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+
+
+
+.flex-containerNav {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-containerNav > div {
+   background-color: $secondary-color;
+    width: 100%;
+    margin: 1% 0 0;
+    padding: 0.5%;
+}
+
+.navBar {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+
+
+.flex-containerMain {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border: thick solid $secondary-color;
+    width: 95%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.flex-containerMain > div {
+    width: 48%;
+}
+
+.leftDiv {
+    border: thick dotted $primary-color;
+}
+
+.rightDiv {
+    border: thick dotted $secondary-color;
+}
+
+.leftImg {
+    width: 97%;
+    padding: 1.5%;
+}
+
+.flex-containerGallery {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-containerGallery > div {
+    border: thick solid $tertiary-color;
+    margin: 2% 2%;
+    padding: 1%;
+}
+
+.galleryImg {
+    width: 47%;
+    margin: 0 auto;
+}
+
+
+
+h1, h2 {
+    text-align: center;
+}
+
+.flex-containerColumns {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.flex-containerColumns > div {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+
+form {
+    margin-top: 3em;
+    border: solid 2px $secondary-color;
+    padding: 0.3em;
+    font-size: 16px;
+}
+    
+#formcontainer {
+    width: 95%;
+    display: block;
+    margin: auto;
+}
+
+.labelfloatleft label {
+    width: 90px;
+    margin-right: 7px;
+    color: black;
+    float: left;
+    text-align: right;
+}
+
+.labelfloatleft input {
+    display: block;
+}
+
+fieldset {
+    margin-bottom: 1em;
+    border: solid 2px $tertiary-color;
+    background-color: white;
+    display: block;
+}
+
+legend {
+    color: $secondary-color;
+    padding: 0 5px;
+}
+
+label {
+    color: black;
+}
+
+input.text {
+    background-color: white;
+}
+
+fieldset.group {
+    float: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    border: solid 2px $secondary-color;
+    display: block;
+}
+
+select {
+    display: block;
+}
+
+input.button {
+    color: $tertiary-color;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2px;
+    background-color: white;
+    border: 1px solid $secondary-color;
+    display: inline;
+}
+
+
+
+.flex-containerFooter {
+    display: flex;
+    background-color: $tertiary-color;
+    padding: 1.5%;
+}
+
+.flex-containerFooter > div {
+    width: 100%;
+}
+
+.footerText {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+}
