@@ -66,69 +66,24 @@ h4 {
   width: 30%;
 }
 
-#indesignMore {
+#schoolMore {
   display: none;
 }
 
-#photoshopMore {
+#freelanceMore {
   display: none;
 }
 
-#illustratorMore {
+/* School Div */
+#swedenMore {
   display: none;
 }
 
-/* InDesign Div */
-#treasureIslandMore {
+#culinaryMore {
   display: none;
 }
 
-#swedenTShirtMore {
-  display: none;
-}
-
-#swedenPosterMore {
-  display: none;
-}
-
-#ninjaSushiMore {
-  display: none;
-}
-
-#eatRawMore {
-  display: none;
-}
-
-#culinaryCoverMore {
-  display: none;
-}
-
-#culinaryDinnerMore {
-  display: none;
-}
-
-#culinaryCoordinatorMore {
-  display: none;
-}
-
-#culinaryToqueMore {
-  display: none;
-}
-
-#recipeBookMore {
-  display: none;
-}
-
-/* Photoshop Div */
 #acneMore {
-  display: none;
-}
-
-#actionMore {
-  display: none;
-}
-
-#animalMore {
   display: none;
 }
 
@@ -136,31 +91,20 @@ h4 {
   display: none;
 }
 
-#bwMore {
-  display: none;
-}
-
-#doubleMore {
-  display: none;
-}
-
-#headshotMore {
-  display: none;
-}
-
 #imageMore {
   display: none;
 }
 
-#masterpieceMore {
-  display: none;
-}
-
-#battleMore {
-  display: none;
-}
-
 #portraitMore {
+  display: none;
+}
+
+/* Freelance Div */
+#coffeeMore {
+  display: none;
+}
+
+#logoMore {
   display: none;
 }
 
