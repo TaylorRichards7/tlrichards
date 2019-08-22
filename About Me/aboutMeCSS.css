@@ -34,4 +34,9 @@ h4 {
   height: 100%;
 }
 
+/* Lists */
+ul, ol {
+  margin-left: 5%;
+}
+
 /*# sourceMappingURL=aboutMeCSS.css.map */
